@@ -1,6 +1,6 @@
 #include "libft.h"
 
-void	ft_memset(void *s, int c, size_t n)
+void	*ft_memset(void *s, int c, size_t n)
 {
 	char *c_s;
 	char c_c;
@@ -12,4 +12,5 @@ void	ft_memset(void *s, int c, size_t n)
 		*c_s = (char)c_c;
 		c_s++;
 	}
+	return (s);
 }

@@ -1,6 +1,6 @@
 #include "libft.h"
 
-int		ft_isechapcarac(int c)
+bool_t		ft_isechapcarac(int c)
 {
 	return (c == ' ' ||
 			c == '\t' ||
