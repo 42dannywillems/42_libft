@@ -3,7 +3,7 @@
 int		ft_atoi(const char *str)
 {
 	int		nbre;
-	int		i;
+	count_t	i;
 
 	i = 0;
 	nbre = 0;

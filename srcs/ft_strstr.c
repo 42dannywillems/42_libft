@@ -2,7 +2,7 @@
 
 int		check_all(const char *str, const char *to_find)
 {
-	size_t j;
+	count_t j;
 	size_t len_str;
 
 	j = 0;
@@ -23,7 +23,7 @@ int		check_all(const char *str, const char *to_find)
 
 char	*ft_strstr(const char *str, const char *to_find)
 {
-	int		i;
+	count_t	i;
 
 	i = 0;
 	if (*to_find != '\0')
