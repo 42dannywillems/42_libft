@@ -1,10 +1,19 @@
 #include "libft.h"
 
-void	ft_strncpy(const char *src, char *dest, size_t n)
+char	*ft_strncpy(char *dest, const char *src, size_t n)
 {
-	if (*src && n > 0)
+	count_t i;
+
+	i = 0;
+	while (src[i] && i < n)
 	{
-		*dest = *src;
-		ft_strncpy(src + 1, dest + 1, n - 1);
+		dest[i] = src[i];
+		i++;
 	}
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
+	return (dest);
 }
