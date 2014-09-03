@@ -9,7 +9,7 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	if (start + len <= s_len
 		&& (n_s = ft_strnew(len)))
 	{
-	n_s = ft_strncpy(n_s, s + start, len);
+		n_s = ft_strncpy(n_s, s + start, len);
 		return (n_s);
 	}
 	else

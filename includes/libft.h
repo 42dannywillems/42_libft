@@ -4,11 +4,15 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+# include "gs_slist.h"
+# include "gs_prototypes.h"
+
 # define STDIN	0
 # define STDOUT	1
 # define STDERR	2
+# define TRUE	1
+# define FALSE	0
 
-typedef unsigned int	size_t;
 typedef unsigned int	count_t;
 typedef int				bool_t;
 
@@ -64,5 +68,8 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char const *s, int fd);
 void	ft_putendl_fd(char const *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+
+char	**ft_strsplit(const char *str, const char *sep);
+char	**ft_splitwhitespaces(const char *str);
 
 #endif
