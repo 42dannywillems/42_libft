@@ -1,7 +1,10 @@
+PHONY = static dynamic debug
+
 NAME	=	libft.a
 
 FLAGS	=	-Wall -Wextra -Werror
 fPIC	=
+DEBUG	=
 
 SRC_DIR =	srcs
 OBJ_DIR =	objs
@@ -15,7 +18,7 @@ all: $(NAME)
 $(NAME): static
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
-	gcc -I$(INC) $(FLAGS) $(fPIC) -c $< -o $@
+	gcc $(DEBUG) -I$(INC) $(FLAGS) $(fPIC) -c $< -o $@
 
 static: check_dir $(OBJ) 
 	ar -r $(NAME) $(OBJ)
@@ -25,6 +28,9 @@ dynamic: fPIC = -fPIC
 
 dynamic: check_dir $(OBJ)
 
+debug:	DEBUG = -g
+
+debug:	all
 check_dir:
 	if [ ! -d $(OBJ_DIR) ]; then mkdir $(OBJ_DIR); fi;
 
