@@ -1,18 +1,31 @@
 #include "gs_slist.h"
 #include "gs_prototypes.h"
 
-t_slist	*gs_slist_reverse(t_slist *begin_list)
+static void	_gs_slist_reverse(t_snode *node)
 {
-	t_slist *previous;
-	t_slist *tmp;
+	t_snode *previous;
+	t_snode *tmp;
+
 	previous = NULL;
-	
-	while (begin_list)
+	while (node)
 	{
-		tmp = begin_list->next;
-		begin_list->next = previous;
-		previous = begin_list;
-		begin_list = tmp;
+		tmp = node->next;
+		node->next = previous;
+		previous = node;
+		node = tmp;
 	}
-	return (previous);
+}	
+
+t_slist		*gs_slist_reverse(t_slist *list)
+{
+	t_snode *tmp;
+
+	if (list && list->size > 1)
+	{
+		_gs_slist_reverse(list->head);
+		tmp = list->head;
+		list->head = list->tail;
+		list->tail = tmp;
+	}
+	return (list);
 }

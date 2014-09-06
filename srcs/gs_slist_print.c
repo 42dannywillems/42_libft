@@ -1,11 +1,19 @@
 #include "gs_slist.h"
 #include <unistd.h>
 
-void	gs_slist_print(t_slist *begin)
+void	gs_slist_print(t_slist *list, void (*print_data)(void *))
 {
-	if (begin)
+	t_snode *n;
+
+	if (list)
 	{
-		write(1, begin->data, sizeof(begin->data));
-		gs_slist_print(begin->next);
+		n = list->head;
+		while (n)
+		{
+			print_data(n->data);
+			write(1, " -> ", 4);
+			n = n->next;
+		}
+		write(1, "*", 1);
 	}
 }

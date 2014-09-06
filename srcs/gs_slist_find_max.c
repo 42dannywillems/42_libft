@@ -1,18 +1,23 @@
 #include "gs_slist.h"
 
-t_slist *gs_slist_find_max(t_slist *list, int (*cmp)(void *, void *))
+static t_snode	*gs_snode_find_max(t_snode *node, int (*cmp)(void *, void*))
 {
-	t_slist *max;
-	t_slist *tmp;
+	t_snode *max;
 
-	tmp = list;
-	max = list;
-	while (tmp)
+	max = node;
+	while (node)
 	{
-		if (cmp(tmp->data, max->data) > 0)
-			max = tmp;
-		tmp = tmp->next;
+		if (cmp(node->data, max->data) > 0)
+			max = node;
+		node = node->next;
 	}
 	return (max);
 }
 
+t_snode *gs_slist_find_max(const t_slist *list, int (*cmp)(void *, void *))
+{
+	if (list->size > 0)
+		return (gs_snode_find_max(list->head, cmp));
+	else
+		return (NULL);
+}

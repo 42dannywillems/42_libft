@@ -1,16 +1,22 @@
 #include "gs_slist.h"
 #include "gs_prototypes.h"
 
-void		gs_slist_push_front(t_slist **begin_list, void *data)
+void		gs_slist_push_front(t_slist *list, void *data)
 {
-	t_slist *tmp;
+	t_snode *tmp;
 
-	if (*begin_list)
+	if (list && (tmp = gs_snode_create(data)))
 	{
-		tmp = gs_slist_create(data);
-		tmp->next = *begin_list;
-		*begin_list = tmp;
+		if (gs_slist_isempty(list))
+		{
+			list->head = tmp;
+			list->tail = tmp;
+		}
+		else
+		{
+			tmp->next = list->head;
+			list->head = tmp;
+		}
+		list->size += 1;
 	}
-	else
-		*begin_list = gs_slist_create(data);
 }

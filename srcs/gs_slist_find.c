@@ -1,15 +1,23 @@
 #include "gs_slist.h"
 #include "gs_prototypes.h"
 
-t_slist	*gs_slist_find(t_slist *begin_list, void *data_ref, int (*cmp)())
+static t_snode	*gs_snode_find(t_snode *node, void *data_ref, int (*cmp)())
 {
-	if (begin_list)
+	if (node)
 	{
-		if ((*cmp)(begin_list->data, data_ref) == 0)
-			return (begin_list);
+		if ((*cmp)(node->data, data_ref) == 0)
+			return (node);
 		else
-			return (gs_slist_find(begin_list->next, data_ref, cmp));
+			return (gs_snode_find(node->next, data_ref, cmp));
 	}
+	else
+		return (NULL);
+}
+
+t_snode	*gs_slist_find(const t_slist *list, void *data_ref, int (*cmp)())
+{
+	if (list->size > 0)
+		return (gs_snode_find(list->head, data_ref, cmp));
 	else
 		return (NULL);
 }
