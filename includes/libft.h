@@ -13,6 +13,13 @@
 # define TRUE	1
 # define FALSE	0
 
+typedef struct	s_list
+{
+	void			*content;
+	size_t			content_size;
+	struct s_list	*next;
+}				t_list;
+
 typedef unsigned int	count_t;
 typedef int				bool_t;
 
@@ -20,6 +27,7 @@ int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
 bool_t	ft_isalnum(int c);
 bool_t	ft_isalpha(int c);
+bool_t	ft_isblankspace(int c);
 bool_t	ft_isdigit(int c);
 bool_t	ft_isechapcarac(int c);
 bool_t	ft_islowercase(int c);
@@ -59,7 +67,6 @@ bool_t	ft_strequ(char const *s1, char const *s2);
 bool_t	ft_strnequ(char const *s1, char const *s2, size_t n);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
-bool_t	ft_isblanckspace(int c);
 void	ft_putchar(char c);
 void	ft_putstr(char const *s);
 void	ft_putendl(char const *s);
@@ -69,7 +76,15 @@ void	ft_putstr_fd(char const *s, int fd);
 void	ft_putendl_fd(char const *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
+char	*ft_strtrim(char const *s);
 char	**ft_strsplit(const char *str, const char *sep);
 char	**ft_splitwhitespaces(const char *str);
+
+t_list	*ft_lstnew(void const *content, size_t content_size);
+void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
+void	ft_lstdel(t_list **alst, void (*del)(void *, size_t));
+void	ft_lstadd(t_list **alst, t_list *new);
+void	ft_lstiter(t_list *lst, void (*f)(t_list *elem));
+t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 #endif
