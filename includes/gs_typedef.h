@@ -3,5 +3,6 @@
 
 typedef unsigned int	pos_t;
 typedef unsigned int	count_t;
+typedef int				bool_t;
 
 #endif
