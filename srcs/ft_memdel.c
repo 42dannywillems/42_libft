@@ -3,5 +3,5 @@
 void	ft_memdel(void **a)
 {
 	free(*a);
-	a = NULL;
+	*a = NULL;
 }
