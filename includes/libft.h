@@ -23,6 +23,10 @@ typedef struct	s_list
 typedef unsigned int	count_t;
 typedef int				bool_t;
 
+char	*ft_array_join(const char **s, const char *join);
+size_t	ft_array_len(const char **s);
+size_t	ft_array_strlen(const char **s);
+
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
 bool_t	ft_isalnum(int c);
