@@ -4,13 +4,18 @@ LIB		=	ft
 LIB_DIR	=	../
 FLAGS	=	-Wall -Wextra -Werror
 INC		=	../includes
+DEBUG	=
 
 SRC		=	$(wildcard *.c)
 
 all: $(NAME)
 
 $(NAME): 
-	gcc -I$(INC) $(FLAGS) $(SRC) -o $(NAME) -l$(LIB) -L$(LIB_DIR)
+	gcc $(DEBUG) -I$(INC) $(FLAGS) $(SRC) -o $(NAME) -l$(LIB) -L$(LIB_DIR)
+
+debug: DEBUG = -g
+
+debug: $(NAME)
 
 clean:
 	rm -f $(NAME)
