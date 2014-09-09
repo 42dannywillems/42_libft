@@ -83,6 +83,8 @@ void	ft_putnbr_fd(int n, int fd);
 char	*ft_strtrim(char const *s);
 char	**ft_strsplit(const char *str, const char *sep);
 char	**ft_splitwhitespaces(const char *str);
+char	*ft_itoa(int n);
+size_t	ft_intlen(int nb);
 
 t_list	*ft_lstnew(void const *content, size_t content_size);
 void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
