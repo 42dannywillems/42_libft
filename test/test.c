@@ -3,24 +3,10 @@
 void	test_strtrim(char const *s);
 void	test_strsplit(char const *str, char const *sep);
 void	test_array_join(const char **s, const char *join);
+void	test_itoa();
 
-int main(int argc, char **argv)
+int main(void)
 {
-	char	**s;
-	int		i;
-
-	if (argc > 1)
-	{
-		s = (char **)malloc(sizeof(char *) * (argc + 1));
-		for(i = 0;i < argc;i++)
-			s[i] = ft_strdup(argv[i]);
-		s[argc] = "\0";
-
-		test_array_join((const char **) s, " ");
-		
-		//test_strtrim(argv[1]);
-		//test_strsplit(argv[2], argv[3]);
-	}
-
+	test_itoa();
 	return (0);
 }
