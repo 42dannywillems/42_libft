@@ -1,3 +1,2 @@
-ft_itoa
 ft_memmove
 ft_lstiter
