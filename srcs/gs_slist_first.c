@@ -1,5 +1,5 @@
 #include "gs_slist.h"
-#include "gs_prototypes.h"
+#include "gs_slist_prototypes.h"
 
 t_snode		*gs_slist_first(t_slist *list)
 {

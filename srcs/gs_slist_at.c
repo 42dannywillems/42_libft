@@ -1,5 +1,5 @@
 #include "gs_slist.h"
-#include "gs_prototypes.h"
+#include "gs_slist_prototypes.h"
 
 
 static t_snode	*_gs_snode_at(t_snode *node, pos_t i)

@@ -1,5 +1,5 @@
-#include "gs_slist.h"
-#include "gs_prototypes.h"
+#include "gs_stack.h"
+#include "gs_stack_prototypes.h"
 
 void	gs_snode_del(t_snode **n)
 {

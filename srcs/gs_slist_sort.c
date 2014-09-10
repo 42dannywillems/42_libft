@@ -1,5 +1,5 @@
 #include "gs_slist.h"
-#include "gs_prototypes.h"
+#include "gs_slist_prototypes.h"
 
 void	_gs_snode_sort(t_snode *node, int (*cmp)(void *, void *))
 {

@@ -1,4 +1,4 @@
-#include "gs_slist.h"
+#include "gs_stack.h"
 
 t_snode	*gs_snode_create(void *data)
 {

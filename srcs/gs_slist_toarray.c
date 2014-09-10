@@ -1,5 +1,5 @@
 #include "gs_slist.h"
-#include "gs_prototypes.h"
+#include "gs_slist_prototypes.h"
 
 char	**gs_slist_toarray(t_slist *list, bool_t delete_list)
 {

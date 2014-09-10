@@ -1,5 +1,5 @@
 #include "gs_slist.h"
-#include "gs_prototypes.h"
+#include "gs_slist_prototypes.h"
 
 t_slist		*gs_slist_create()
 {

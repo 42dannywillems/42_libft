@@ -1,5 +1,5 @@
 #include "gs_slist.h"
-#include "gs_prototypes.h"
+#include "gs_slist_prototypes.h"
 
 void	gs_slist_merge(t_slist **list1, t_slist *list2)
 {

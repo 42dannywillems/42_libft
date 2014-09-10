@@ -1,3 +1,4 @@
+#include "gs_slist_prototypes.h"
 #include "gs_slist.h"
 #include <unistd.h>
 

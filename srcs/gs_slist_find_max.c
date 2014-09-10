@@ -1,3 +1,4 @@
+#include "gs_slist_prototypes.h"
 #include "gs_slist.h"
 
 static t_snode	*gs_snode_find_max(t_snode *node, int (*cmp)(void *, void*))
