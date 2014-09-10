@@ -4,9 +4,6 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-# include "gs_slist.h"
-# include "gs_prototypes.h"
-
 # define STDIN	0
 # define STDOUT	1
 # define STDERR	2
