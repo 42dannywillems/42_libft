@@ -1,6 +1,6 @@
 #include "libft.h"
 #include "gs_slist.h"
-#include "gs_prototypes.h"
+#include "gs_slist_prototypes.h"
 #include "gs_typedef.h"
 
 char	**ft_strsplit(const char *str, const char *sep)
