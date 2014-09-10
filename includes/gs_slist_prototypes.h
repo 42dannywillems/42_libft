@@ -15,7 +15,7 @@ void	gs_slist_clear(t_slist **begin_list);
 size_t	gs_slist_size(t_slist *begin_list);
 t_snode	*gs_slist_first(t_slist *list);
 t_snode	*gs_slist_last(t_slist *list);
-bool_t	gs_slist_isempty(t_slist *list);
+bool_t	gs_slist_isempty(const t_slist *list);
 
 void	gs_slist_push_front(t_slist *list, void *data);
 void	gs_slist_push_back(t_slist *list, void *data);
