@@ -4,11 +4,12 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-# define STDIN	0
-# define STDOUT	1
-# define STDERR	2
-# define TRUE	1
-# define FALSE	0
+# define STDIN		0
+# define STDOUT		1
+# define STDERR		2
+# define TRUE		1
+# define FALSE		0
+# define BUFSIZE	4096
 
 typedef struct	s_list
 {
@@ -44,12 +45,13 @@ char	*ft_strcat(char *dest, const char *src);
 int		ft_strcmp(const char *s1, const char *s2);
 char	*ft_strcpy(char *dest, const char *src);
 char	*ft_strdup(const char *s1);
+char	*ft_strndup(const char *src, size_t n);
 size_t	ft_strlcat(char *dest, const char *stc, size_t size);
 size_t	ft_strlen(const char *str);
 char	*ft_strncat(char *dest, const char *src, size_t nb);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strncpy(char *dest, const char *src, size_t n);
-char	*ft_strstr(const char *str, const char *to_find);
+char	*ft_strstr(const char *haystack, const char *needle);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 char	*ft_strchr(const char *s, int c);

@@ -1,46 +1,26 @@
 #include "libft.h"
 
-int		check_all(const char *str, const char *to_find)
+char	*ft_strstr(const char *haystack, const char *needle)
 {
-	count_t j;
-	size_t len_str;
+	size_t	len_needle;
+	char	*ret;
 
-	j = 0;
-	len_str = ft_strlen(str);
-	while (to_find[j] != '\0')
+	ret = (char *)haystack;
+	if (*needle == '\0')
+		return (ret);
+
+	len_needle = ft_strlen(needle);
+	while (*ret)
 	{
-		if (j < len_str)
-		{
-			if (str[j] != to_find[j])
-				return (0);
+		ret = ft_strchr(ret, needle[0]);
+		if (ret)
+		{	
+			if (ft_strnequ(ret, needle, len_needle))
+				return (ret);
+			ret++;
 		}
 		else
-			return (0);
-		j++;
+			return (ret);
 	}
-	return (1);
-}
-
-char	*ft_strstr(const char *str, const char *to_find)
-{
-	count_t	i;
-
-	i = 0;
-	if (*to_find != '\0')
-	{
-		while (str[i] != '\0')
-		{
-			if (str[i] == to_find[0])
-			{
-				if (check_all(str + i, to_find))
-				{
-					return (char *)(str + i);
-				}
-			}
-			i++;
-		}
-		return (0);
-	}
-	else
-		return (char *)(str);
+	return (NULL);
 }
