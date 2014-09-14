@@ -1,6 +1,6 @@
 #include "libft.h"
 
-char	*ft_array_join(const char **s, const char *join)
+char	*ft_arrayjoin(const char **s, const char *join)
 {
 	count_t	i;
 	size_t	len_array;
