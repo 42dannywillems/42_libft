@@ -1,2 +1,9 @@
 ft_memmove
 ft_lstiter
+ft_lstmap ?
+
+test ft_strndup
+ft_getnext(_fd)
+ft_getnextline(_fd)
+ft_getnextword(_fd)
+
