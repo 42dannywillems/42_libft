@@ -4,12 +4,25 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+#include "gs_dlist.h"
+#include "gs_dlist_prototypes.h"
+#include "gs_dnode.h"
+#include "gs_queue.h"
+#include "gs_queue_prototypes."
+#include "gs_slist.h"
+#include "gs_slist_prototypes.h"
+#include "gs_snode.h"
+#include "gs_stack.h"
+#include "gs_stack_prototypes.h"
+#include "gs_typedef.h"
+
 # define STDIN		0
 # define STDOUT		1
 # define STDERR		2
 # define TRUE		1
 # define FALSE		0
 # define BUFSIZE	4096
+# define NOT_FOUND	-1
 
 typedef struct	s_list
 {
@@ -80,6 +93,13 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char const *s, int fd);
 void	ft_putendl_fd(char const *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+
+char	*ft_getnext(const char *needle);
+char	*ft_getnext_fd(int fd, const char *needle);
+char	*ft_getnext_line();
+char	*ft_getnext_line_fd(int fd);
+char	*ft_getnext_word();
+char	*ft_getnext_word_fd(int fd);
 
 char	*ft_strtrim(char const *s);
 char	**ft_strsplit(const char *str, const char *sep);
