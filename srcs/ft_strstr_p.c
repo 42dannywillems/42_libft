@@ -12,11 +12,11 @@ int		ft_strstr_p(const char *haystack, const char *needle)
 	while (haystack[i])
 	{
 		i = ft_strchr_p(haystack, *needle);
-		if (i == -1)
-			return (-1);
+		if (i == NOT_FOUND)
+			return (NOT_FOUND);
 		else if (ft_strnequ(haystack + i, needle, len_needle) == TRUE)
 			return (i);
 		i++;
 	}
-	return (-1);
+	return (NOT_FOUND);
 }

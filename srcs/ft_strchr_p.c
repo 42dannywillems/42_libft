@@ -11,5 +11,5 @@ int		ft_strchr_p(const char *str, int c)
 			return (i);
 		i++;
 	}
-	return (-1);
+	return (NOT_FOUND);
 }
