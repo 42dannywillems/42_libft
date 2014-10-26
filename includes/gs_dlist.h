@@ -1,5 +1,5 @@
-#ifndef GS_SLIST_H
-# define GS_SLIST_H
+#ifndef GS_DLIST_H
+# define GS_DLIST_H
 
 # include "gs_dnode.h"
 # include <stdlib.h>
