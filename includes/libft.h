@@ -8,7 +8,7 @@
 #include "gs_dlist_prototypes.h"
 #include "gs_dnode.h"
 #include "gs_queue.h"
-#include "gs_queue_prototypes."
+#include "gs_queue_prototypes.h"
 #include "gs_slist.h"
 #include "gs_slist_prototypes.h"
 #include "gs_snode.h"
