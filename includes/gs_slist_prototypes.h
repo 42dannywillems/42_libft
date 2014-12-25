@@ -1,5 +1,5 @@
-#ifndef GS_PROTOTYPES_H
-# define GS_PROTOTYPES_H
+#ifndef GS_SLIST_PROTOTYPES_H
+# define GS_SLIST_PROTOTYPES_H
 
 # include "gs_slist.h"
 # include "gs_typedef.h"
