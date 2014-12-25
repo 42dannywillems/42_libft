@@ -1,0 +1,5 @@
+Tests
+	- ft_strndup
+	- ft_getnext
+	- ft_getnextword
+
