@@ -87,7 +87,7 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 // Check functions
 bool_t	ft_isalnum(int c);
 bool_t	ft_isalpha(int c);
-bool_t		ft_isascii(int c);
+bool_t	ft_isascii(int c);
 bool_t	ft_isblankspace(int c);
 bool_t	ft_isdigit(int c);
 bool_t	ft_isechapcarac(int c);
