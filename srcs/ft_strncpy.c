@@ -4,8 +4,8 @@ char	*ft_strncpy(char *dest, const char *src, size_t n)
 {
 	count_t i;
 
-	if (dest == NULL || src == NULL)
-		return (NULL);
+	ISNULL(dest);
+	ISNULL(src);
 	i = 0;
 	while (src[i] && i < n)
 	{
