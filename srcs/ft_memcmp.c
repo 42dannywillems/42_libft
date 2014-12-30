@@ -9,13 +9,10 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n)
 	uc_s2 = (unsigned char *)s2;
 	while (n-- > 0)
 	{
-		if (*uc_s1 == *uc_s2)
-		{
-			uc_s1++;
-			uc_s2++;
-		}
-		else
-			return (*uc_s2 - *uc_s1);
+		if (*uc_s1 != *uc_s2)
+			return (*uc_s1 - *uc_s2);
+		uc_s1++;
+		uc_s2++;
 	}
-	return (*uc_s2 - *uc_s1);
+	return (0);
 }
