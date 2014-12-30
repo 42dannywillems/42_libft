@@ -1,29 +1,13 @@
 #include "libft.h"
 
-char	**ft_strsplit(const char *str, const char *sep)
+char	**ft_strsplit(const char *str, int c)
 {
-	count_t		i;
-	size_t		len;
-	size_t		len_sep;
-	size_t		len_str;
-	t_slist		*list;
-	
-	i = 0;
-	len_sep = ft_strlen(sep);
-	len_str = ft_strlen(str);
-	list = NULL;
+	char *t;
 
-	while (i < len_str)
+	if ((t = ft_strnew(1)))
 	{
-		len = 0;
-		while (i < len_str && ft_strnequ(str + i, sep, len_sep))
-			i += len_sep;
-		while (	i + len < len_str 
-				&& ft_strnequ(str + i + len, sep, len_sep) == 0)
-			len++;
-		if (len > 0)
-			list = gs_slist_push_front(list, ft_strsub(str, i, len));
-		i += len;
+		t[0] = (char)c;
+		return (ft_strsplit_str(str, t));
 	}
-	return (gs_slist_toarray(list, 0));
+	return (NULL);
 }
