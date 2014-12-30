@@ -21,8 +21,8 @@ int		ft_atoi(const char *str)
 	while (ft_isdigit(str[i]))
 	{
 		nbre *= 10;
-		nbre += signe * (str[i] - '0');
+		nbre += (str[i] - '0');
 		i++;
 	}
-	return (nbre);
+	return (signe * nbre);
 }
