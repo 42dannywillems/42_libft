@@ -98,6 +98,8 @@ bool_t	ft_isprint(int c);
 // Print functions
 void	ft_putchar(char c);
 void	ft_putstr(char const *s);
+void	ft_putrepeat(char const *c, size_t n);
+void	ft_putrepeatendl(char const *c, size_t n);
 void	ft_putendl(char const *s);
 void	ft_putnbr(int n);
 void	ft_putchar_fd(char c, int fd);
