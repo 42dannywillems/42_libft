@@ -1,4 +1,4 @@
-NAME	=	libft
+NAME	=	libft.a
 
 FLAGS	=	-Wall -Wextra -Werror
 fPIC	=
