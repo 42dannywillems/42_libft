@@ -8,6 +8,8 @@
 #include "gs_slist.h"
 #include "gs_stack.h"
 
+# define ISNULL(x) if (((x)) == NULL) return (NULL)
+
 typedef struct	s_list
 {
 	void			*content;
@@ -108,7 +110,7 @@ void	ft_putendl_fd(char const *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
 // Transformation
-char	**ft_strsplit(const char *str, int c);
+char	**ft_strsplit(const char *str, char c);
 char	**ft_strsplit_str(const char *str, const char *sep);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
