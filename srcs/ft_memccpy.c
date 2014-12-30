@@ -12,7 +12,7 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 	while (i < n)
 	{
 		if (*c_src == (unsigned char)c)
-			return (c_src + 1);
+			return (c_dest + 1);
 		*c_dest = *c_src;
 		c_dest++;
 		c_src++;
