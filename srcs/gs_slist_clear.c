@@ -1,24 +1,14 @@
 #include "gs_slist.h"
-#include "gs_slist_prototypes.h"
 
-static void	_gs_snode_del(t_snode **node)
+void	gs_slist_clear(t_slist **list)
 {
-	t_snode *tmp;
+	t_slist *tmp;
 
-	while (node && *node)
+	while (*list)
 	{
-		tmp = (*node)->next;
-		gs_snode_del(node);
-		*node = tmp;
-	}
-}
-
-void		gs_slist_clear(t_slist **list)
-{
-	if (!gs_slist_isempty(*list))
-	{
-		_gs_snode_del(&((*list)->head));
+		tmp = (*list)->next;
 		free(*list);
+		*list = tmp;
 	}
 	*list = NULL;
 }

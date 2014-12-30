@@ -1,16 +1,14 @@
 #include "gs_slist.h"
-#include "gs_slist_prototypes.h"
 
-t_slist		*gs_slist_create()
+t_slist		*gs_slist_create(void *data)
 {
 	t_slist	*list;
 
 	list = (t_slist *)malloc(sizeof(t_slist));
 	if (list)
 	{
-		list->head = NULL;
-		list->tail = NULL;
-		list->size = 0;
+		list->data = data;
+		list->next = NULL;
 	}
 	return (list);
 }

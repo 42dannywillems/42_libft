@@ -6,11 +6,13 @@ FLAGS	=	-Wall -Wextra -Werror
 INC		=	../includes
 DEBUG	=
 
-SRC		=	$(wildcard *.c)
+SRC_DIR =	srcs
+SRC		=	$(wildcard $(SRC_DIR)/*.c)
 
 all: $(NAME)
 
 $(NAME): 
+	$(MAKE) -C ../
 	gcc $(DEBUG) -I$(INC) $(FLAGS) $(SRC) -o $(NAME) -l$(LIB) -L$(LIB_DIR)
 
 debug: DEBUG = -g

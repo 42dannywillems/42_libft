@@ -1,7 +1,9 @@
 #include "gs_slist.h"
-#include "gs_slist_prototypes.h"
 
-size_t	gs_slist_size(t_slist *list)
+size_t	gs_slist_size(const t_slist *list)
 {
-	return (list->size);
+	if (gs_slist_isempty(list))
+		return (0);
+	else
+		return (1 + gs_slist_size(list->next));
 }

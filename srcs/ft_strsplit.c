@@ -1,7 +1,4 @@
 #include "libft.h"
-#include "gs_slist.h"
-#include "gs_slist_prototypes.h"
-#include "gs_typedef.h"
 
 char	**ft_strsplit(const char *str, const char *sep)
 {
@@ -25,7 +22,7 @@ char	**ft_strsplit(const char *str, const char *sep)
 				&& ft_strnequ(str + i + len, sep, len_sep) == 0)
 			len++;
 		if (len > 0)
-			gs_slist_push_back(list, ft_strsub(str, i, len));
+			list = gs_slist_push_front(list, ft_strsub(str, i, len));
 		i += len;
 	}
 	return (gs_slist_toarray(list, 0));

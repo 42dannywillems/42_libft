@@ -1,20 +1,14 @@
-#include "gs_slist_prototypes.h"
 #include "gs_slist.h"
-#include <unistd.h>
+#include "libft.h"
 
-void	gs_slist_print(t_slist *list, void (*print_data)(void *))
+void	gs_slist_print(t_slist *list)
 {
-	t_snode *n;
-
-	if (list)
+	if (!gs_slist_isempty(list))
 	{
-		n = list->head;
-		while (n)
-		{
-			print_data(n->data);
-			write(1, " -> ", 4);
-			n = n->next;
-		}
-		write(1, "*", 1);
+		ft_putstr((const char *)list->data);
+		ft_putstr(" -> ");
+		gs_slist_print(list->next);
 	}
+	else
+		ft_putendl("*");
 }

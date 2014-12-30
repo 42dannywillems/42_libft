@@ -4,25 +4,9 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-#include "gs_dlist.h"
-#include "gs_dlist_prototypes.h"
-#include "gs_dnode.h"
-#include "gs_queue.h"
-#include "gs_queue_prototypes.h"
-#include "gs_slist.h"
-#include "gs_slist_prototypes.h"
-#include "gs_snode.h"
-#include "gs_stack.h"
-#include "gs_stack_prototypes.h"
 #include "gs_typedef.h"
-
-# define STDIN		0
-# define STDOUT		1
-# define STDERR		2
-# define TRUE		1
-# define FALSE		0
-# define BUFSIZE	4096
-# define NOT_FOUND	-1
+#include "gs_slist.h"
+#include "gs_stack.h"
 
 typedef struct	s_list
 {
@@ -37,9 +21,6 @@ void	ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void	ft_lstadd(t_list **alst, t_list *new);
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
-
-typedef unsigned int	count_t;
-typedef int				bool_t;
 
 /* Array manipulations functions */
 char	*ft_array_join(const char **s, const char *join);
@@ -62,6 +43,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memset(void *s, int c, size_t n);
+void	*ft_memmove(void *s1, const void *s2, size_t n);
 
 void	*ft_memchr(const void *s, int c, size_t n);
 /* End memory manipulations functions */
@@ -86,7 +68,7 @@ int		ft_tolower(int c);
 // Copy & Assign
 char	*ft_strcat(char *dest, const char *src);
 char	*ft_strncat(char *dest, const char *src, size_t nb);
-size_t	ft_strlcat(char *dest, const char *stc, size_t size);
+char	*ft_strlcat(char *dest, const char *stc, size_t size);
 char	*ft_strcpy(char *dest, const char *src);
 char	*ft_strncpy(char *dest, const char *src, size_t n);
 
@@ -105,6 +87,7 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 // Check functions
 bool_t	ft_isalnum(int c);
 bool_t	ft_isalpha(int c);
+bool_t		ft_isascii(int c);
 bool_t	ft_isblankspace(int c);
 bool_t	ft_isdigit(int c);
 bool_t	ft_isechapcarac(int c);
@@ -131,9 +114,11 @@ char	**ft_splitwhitespaces(const char *str);
 
 // Search
 char	*ft_strchr(const char *s, int c);
+char	*ft_strnchr(const char *s, int c, size_t n);
 int		ft_strchr_p(const char *str, int c);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strstr(const char *haystack, const char *needle);
+char	*ft_strnstr(const char *haystack, const char *needle, size_t n);
 int		ft_strstr_p(const char *haystack, const char *needle);
 /* End string manipulations functions */
 

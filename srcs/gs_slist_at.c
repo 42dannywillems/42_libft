@@ -1,19 +1,12 @@
 #include "gs_slist.h"
-#include "gs_slist_prototypes.h"
 
-
-static t_snode	*_gs_snode_at(t_snode *node, pos_t i)
+t_slist	*gs_slist_at(t_slist *list, pos_t i)
 {
-	if (i == 0)
-		return (node);
-	else
-		return (_gs_snode_at(node->next, i - 1));
-}
-
-t_snode		*gs_slist_at(t_slist *begin_list, pos_t i)
-{
-	if (i < begin_list->size)
-		return (_gs_snode_at(begin_list->head, i));
+	if (!gs_slist_isempty(list))
+		if (i == 0)
+			return (list);
+		else
+			return (gs_slist_at(list->next, i - 1));
 	else
 		return (NULL);
 }

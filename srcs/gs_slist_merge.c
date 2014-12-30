@@ -1,20 +1,17 @@
 #include "gs_slist.h"
-#include "gs_slist_prototypes.h"
 
-void	gs_slist_merge(t_slist **list1, t_slist *list2)
+t_slist	*gs_slist_merge(t_slist *list1, t_slist *list2)
 {
-	if (list1 && *list1 && list2)
-	{	
-		if (gs_slist_isempty(*list1))
-		{
-			(*list1)->head = list2->head;
-			(*list1)->tail = list2->tail;
-		}
-		else
-		{
-			(*list1)->tail->next = list2->head;
-			(*list1)->tail = list2->head;
-		}
-		(*list1)->size += list2->size;
+	t_slist *ret;
+
+	if (list1 && !gs_slist_isempty(list1))
+	{
+		ret = list1;
+		while (list1->next)
+			list1 = list1->next;
+		list1->next = list2;
 	}
+	else
+		ret = list2;
+	return (ret);
 }

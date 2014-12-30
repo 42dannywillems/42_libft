@@ -1,24 +1,20 @@
-#include "gs_slist_prototypes.h"
 #include "gs_slist.h"
 
-static t_snode	*gs_snode_find_min(t_snode *node, int (*cmp)(void *, void*))
+t_slist	*gs_slist_find_min(t_slist *list, int (*cmp)(void *, void *))
 {
-	t_snode *min;
+	t_slist *min;
 
-	min = node;
-	while (node)
+	if (!gs_slist_isempty(list))
 	{
-		if (cmp(node->data, min->data) > 0)
-			min = node;
-		node = node->next;
+		min = list;
+		while (list->next)
+		{
+			if (cmp(min->data, list->data) < 0)
+				min = list;
+			list = list->next;
+		}
+		return (min);
 	}
-	return (min);
-}
-
-t_snode *gs_slist_find_min(const t_slist *list, int (*cmp)(void *, void *))
-{
-	if (list->size > 0)
-		return (gs_snode_find_min(list->head, cmp));
 	else
 		return (NULL);
 }

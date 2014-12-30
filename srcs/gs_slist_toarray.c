@@ -1,31 +1,25 @@
 #include "gs_slist.h"
-#include "gs_slist_prototypes.h"
 
 char	**gs_slist_toarray(t_slist *list, bool_t delete_list)
 {
-	t_snode		*node;
+	t_slist		*tmp;
 	char		**array_str;
 	count_t		i;
 
-	if (list)
+	array_str = (char **)malloc(sizeof(char *) * (gs_slist_size(list) + 1));
+	i = 0;
+	if (array_str)
 	{
-		array_str = (char **)malloc(sizeof(char *) * (list->size + 1));
-		i = 0;
-		if (array_str)
+		while (tmp)
 		{
-			node = list->head;
-			while (node)
-			{
-				array_str[i] = (char *)(node->data);
-				i++;
-				node = node->next;
-			}
-			array_str[list->size] = "\0";
+			array_str[i] = (char *)(tmp->data);
+			i++;
+			tmp = tmp->next;
 		}
-		if (delete_list)
-			gs_slist_clear(&list);
-		return (array_str);
+		array_str[i] = "\0";
 	}
-	return (NULL);
+	if (delete_list)
+		gs_slist_clear(&list);
+	return (array_str);
 
 }

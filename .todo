@@ -1,5 +1,12 @@
-ft_memmove
-ft_lstiter
 ft_lstmap ?
 
-Changer les prototypes.h
+Changer data structures
+	- Repenser la structures de slist et dlist pour la size. Est-ce qu'on
+	  enregistre tout le temps la size dans la structures ?
+	  	Oui :	On doit update à chaque fois la size. 
+				Ou alors on fait pointer la size de chaque noeud vers la size du
+				head. Idée à réfléchir !
+		Non : On a toujours du O(n) dans les algos si on doit calculer la size.
+
+	- Refaire les algos, et bien les réétudier, surtout au niveau des free, et
+	  des insert.
