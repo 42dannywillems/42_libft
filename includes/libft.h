@@ -108,7 +108,8 @@ void	ft_putendl_fd(char const *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
 // Transformation
-char	**ft_strsplit(const char *str, const char *sep);
+char	**ft_strsplit(const char *str, int c);
+char	**ft_strsplit_str(const char *str, const char *sep);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 int		ft_atoi(const char *str);
