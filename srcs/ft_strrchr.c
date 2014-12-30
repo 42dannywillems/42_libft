@@ -9,9 +9,11 @@ char	*ft_strrchr(const char *s, int c)
 	i = 0;
 	while(s[i])
 	{
-		if (s[i] == c)
-			ret = (char *)s;
+		if (s[i] == (unsigned char)c)
+			ret = (char *)(s + i);
 		i++;
 	}
+	if (c == 0)
+		return ((char *)(s + i));
 	return (ret);
 }
