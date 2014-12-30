@@ -4,6 +4,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*uc_s;
 
+	ISNULL(s);
 	uc_s = (unsigned char *)s;
 	while (n-- > 0)
 	{
