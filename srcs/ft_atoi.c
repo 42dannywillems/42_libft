@@ -7,7 +7,7 @@ int		ft_atoi(const char *str)
 
 	i = 0;
 	nbre = 0;
-	while (ft_isechapcarac(str[i]))
+	while (ft_isechapcarac(str[i]) || str[i] == '+')
 		i++;
 	while (ft_isdigit(str[i]))
 	{
