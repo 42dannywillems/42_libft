@@ -7,7 +7,8 @@ char	**ft_strsplit_str(const char *str, const char *sep)
 	size_t		len_sep;
 	size_t		len_str;
 	t_slist		*list;
-	
+
+	ISNULL(str);
 	i = 0;
 	len_sep = ft_strlen(sep);
 	len_str = ft_strlen(str);
@@ -16,7 +17,7 @@ char	**ft_strsplit_str(const char *str, const char *sep)
 	while (i < len_str)
 	{
 		len = 0;
-		while (i < len_str && ft_strnequ(str + i, sep, len_sep))
+		while (	i < len_str && ft_strnequ(str + i, sep, len_sep))
 			i += len_sep;
 		while (	i + len < len_str 
 				&& ft_strnequ(str + i + len, sep, len_sep) == 0)
