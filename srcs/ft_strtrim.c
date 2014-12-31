@@ -7,9 +7,9 @@ char	*ft_strtrim(char const *s)
 	count_t end;
 	bool_t	read;
 
+	ISNULL(s);
 	i = 0;
 	read = FALSE;
-
 	while (s[i] && ft_isblankspace(s[i]))
 		i++;
 	beg = i;
