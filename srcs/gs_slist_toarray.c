@@ -1,22 +1,21 @@
-#include "gs_slist.h"
+#include "libft.h"
 
 char	**gs_slist_toarray(t_slist *list, bool_t delete_list)
 {
-	t_slist		*tmp;
 	char		**array_str;
-	count_t		i;
+	size_t		list_size;
 
-	array_str = (char **)malloc(sizeof(char *) * (gs_slist_size(list) + 1));
-	i = 0;
+	list_size = gs_slist_size(list);
+	array_str = (char **)malloc(sizeof(char *) * (list_size + 1));
 	if (array_str)
 	{
-		while (tmp)
+		array_str[list_size] = NULL;
+		while (list)
 		{
-			array_str[i] = (char *)(tmp->data);
-			i++;
-			tmp = tmp->next;
+			array_str[list_size - 1] = ft_strdup((char *)(list->data));
+			list_size--;
+			list = list->next;
 		}
-		array_str[i] = "\0";
 	}
 	if (delete_list)
 		gs_slist_clear(&list);
