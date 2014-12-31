@@ -11,7 +11,6 @@ char	*ft_array_join(const char **s, const char *join)
 	len_array = ft_array_len(s);
 	len_join = ft_strlen(join);
 	len_str = ft_array_strlen(s) + (len_array - 1) * len_join;
-
 	str = (char *)malloc(sizeof(char) * (len_str + 1));
 	i = 0;
 	while (i < len_array - 1)
