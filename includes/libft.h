@@ -100,14 +100,17 @@ bool_t	ft_isprint(int c);
 // Print functions
 void	ft_putchar(char c);
 void	ft_putstr(char const *s);
-void	ft_putrepeat(char const *c, size_t n);
-void	ft_putrepeatendl(char const *c, size_t n);
 void	ft_putendl(char const *s);
 void	ft_putnbr(int n);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char const *s, int fd);
 void	ft_putendl_fd(char const *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+void	ft_putnbrendl(int n);
+void	ft_putnbrendl_fd(int n, int fd);
+void	ft_putnendl(const char *c, size_t n);
+void	ft_putnchar(char c, size_t n);
+void	ft_putnstr(const char *c, size_t n);
 
 // Transformation
 char	**ft_strsplit(const char *str, char c);
