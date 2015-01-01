@@ -2,8 +2,12 @@
 
 size_t		ft_strlen(const char *str)
 {
-	if (*str)
-		return (1 + ft_strlen(str + 1));
-	else
+	count_t i;
+
+	if (str == NULL)
 		return (0);
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }
