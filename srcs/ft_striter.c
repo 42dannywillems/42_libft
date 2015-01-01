@@ -4,10 +4,13 @@ void	ft_striter(char *s, void (*f)(char *))
 {
 	count_t i;
 
-	i = 0;
-	while (s[i])
+	if (s)
 	{
-		(*f)(s + i);
-		i++;
+		i = 0;
+		while (s[i])
+		{
+			(*f)(s + i);
+			i++;
+		}
 	}
 }
