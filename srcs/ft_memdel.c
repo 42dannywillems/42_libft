@@ -2,6 +2,9 @@
 
 void	ft_memdel(void **a)
 {
-	free(*a);
-	*a = NULL;
+	if (a && *a)
+	{
+		free(*a);
+		*a = NULL;
+	}
 }
