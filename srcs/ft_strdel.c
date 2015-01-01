@@ -4,11 +4,14 @@ void	ft_strdel(char **as)
 {
 	count_t i;
 
-	i = 0;
-	while ((*as)[i])
+	if (as && *as)
 	{
-		free((*as) + i);
-		i++;
+		i = 0;
+		while ((*as)[i])
+		{
+			free((*as) + i);
+			i++;
+		}
+		*as = NULL;
 	}
-	*as = 0;
 }

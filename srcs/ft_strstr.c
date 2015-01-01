@@ -5,6 +5,8 @@ char	*ft_strstr(const char *haystack, const char *needle)
 	size_t	len_needle;
 	char	*ret;
 
+	ISNULL(haystack);
+	ISNULL(needle);
 	ret = (char *)haystack;
 	if (*needle == '\0')
 		return (ret);

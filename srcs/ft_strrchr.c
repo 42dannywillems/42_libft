@@ -5,6 +5,7 @@ char	*ft_strrchr(const char *s, int c)
 	char	*ret;
 	count_t	i;
 	
+	ISNULL(s);
 	ret = NULL;
 	i = 0;
 	while(s[i])
