@@ -1,13 +1,7 @@
 #include "libft.h"
 
+/* We don't have to check if s is NULL because it's done in ft_strlen */
 void	ft_strclr(char *s)
 {
-	count_t i;
-
-	i = 0;
-	while (s[i])
-	{
-		s[i] = '\0';
-		i++;
-	}
+	ft_memset(s, ft_strlen(s), 0);
 }
