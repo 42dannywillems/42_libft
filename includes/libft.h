@@ -9,7 +9,7 @@
 #include "gs_stack.h"
 
 # define ISNULL(x)			if (((x)) == NULL) return (NULL)
-# define ISNULL_ZERO(x)		if (((x)) == NULL) return (NULL)
+# define ISNULL_ZERO(x)		if (((x)) == NULL) return (0)
 # define ISZERO(x)			if (((x)) == 0) return (0)
 # define ISZERO_NULL(x)		if (((x)) == 0) return (NULL)
 
