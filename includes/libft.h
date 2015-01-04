@@ -8,7 +8,10 @@
 #include "gs_slist.h"
 #include "gs_stack.h"
 
-# define ISNULL(x) if (((x)) == NULL) return (NULL)
+# define ISNULL(x)			if (((x)) == NULL) return (NULL)
+# define ISNULL_ZERO(x)		if (((x)) == NULL) return (NULL)
+# define ISZERO(x)			if (((x)) == 0) return (0)
+# define ISZERO_NULL(x)		if (((x)) == 0) return (NULL)
 
 typedef struct	s_list
 {
@@ -59,6 +62,8 @@ void	ft_strclr(char *s);
 char	*ft_strnew(size_t size);
 char	*ft_strdup(const char *s1);
 char	*ft_strndup(const char *src, size_t n);
+char	*ft_str_realloc(char *ptr, size_t new_size);
+
 
 // Length
 size_t	ft_strlen(const char *str);
