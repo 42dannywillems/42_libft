@@ -4,10 +4,12 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+#include "math42.h"
 #include "gs_typedef.h"
 #include "gs_slist.h"
 #include "gs_stack.h"
 #include "gs_bstree.h"
+#include "gs_avltree.h"
 
 # define ISNULL(x)			if (((x)) == NULL) return (NULL)
 # define ISNULL_ZERO(x)		if (((x)) == NULL) return (0)
