@@ -7,6 +7,7 @@
 #include "gs_typedef.h"
 #include "gs_slist.h"
 #include "gs_stack.h"
+#include "gs_bstree.h"
 
 # define ISNULL(x)			if (((x)) == NULL) return (NULL)
 # define ISNULL_ZERO(x)		if (((x)) == NULL) return (0)
@@ -75,7 +76,8 @@ int		ft_tolower(int c);
 // Copy & Assign
 char	*ft_strcat(char *dest, const char *src);
 char	*ft_strncat(char *dest, const char *src, size_t nb);
-char	*ft_strlcat(char *dest, const char *stc, size_t size);
+char	*ft_strlcat(char *dest, const char *src, size_t size);
+char	*ft_strscat(char *s1, const char *s2);
 char	*ft_strcpy(char *dest, const char *src);
 char	*ft_strncpy(char *dest, const char *src, size_t n);
 
