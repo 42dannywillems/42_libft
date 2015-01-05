@@ -17,6 +17,7 @@ typedef struct		s_bstree
 /* NOT TESTED !! */
 
 t_bstree	*gs_bstree_create(void *data);
+size_t		gs_bstree_height(t_bstree *bstree);
 t_bstree	*gs_bstree_min(t_bstree *bstree);
 t_bstree	*gs_bstree_max(t_bstree *bstree);
 t_bstree	*gs_bstree_find(t_bstree *bstree, void *data,
@@ -29,5 +30,8 @@ t_bstree	*gs_bstree_successor(	t_bstree *bstree, void *data,
 									int cmp(void *, void *));
 t_bstree	*gs_bstree_predecessor(	t_bstree *bstree, void *data,
 									int cmp(void *, void *));
+//void		*gs_bstree_apply_preorder(t_bstree *bstree, void *data);
+//void		*gs_bstree_apply_inorder(t_bstree *bstree, void *data);
+//void		*gs_bstree_apply_postorder(t_bstree *bstree, void *data);
 
 #endif
