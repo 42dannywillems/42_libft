@@ -12,7 +12,9 @@ typedef struct		s_slist
 
 t_slist	*gs_slist_create(void *data);
 void	gs_slist_clear(t_slist **list);
-//void	gs_slist_del(t_slist *list, void *data, int cmp(void *, void *));
+t_slist	*gs_slist_delete(t_slist *list, void *data, int cmp(void *, void *));
+t_slist	*gs_slist_delete_first(	t_slist *list, void *data,
+								int cmp(void *, void *));
 size_t	gs_slist_size(const t_slist *list);
 bool_t	gs_slist_isempty(const t_slist *list);
 
