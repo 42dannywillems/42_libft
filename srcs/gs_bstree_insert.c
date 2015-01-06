@@ -5,7 +5,7 @@ t_bstree	*gs_bstree_insert(	t_bstree *bstree, void *data,
 {
 	t_bstree	*tmp;
 
-	if (bstree)
+	if (!gs_bstree_isempty(bstree))
 	{
 		if (cmp(bstree->data, data) < 0 && (tmp = gs_bstree_create(data)))
 		{
