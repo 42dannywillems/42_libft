@@ -1,6 +1,6 @@
 #include "libft.h"
 
-size_t		gs_bstree_height(t_bstree *bstree)
+size_t		gs_bstree_height(const t_bstree *bstree)
 {
 	if (bstree)
 		return (MATH_MAX(	gs_bstree_height(bstree->left),
