@@ -7,10 +7,10 @@
 
 typedef struct		s_bstree 
 {
+			void			*data;
 			struct s_bstree *parent;
 			struct s_bstree *left;
 			struct s_bstree *right;
-			void			*data;
 			//int			cmp(void *, void *);
 			//int				height;
 }					t_bstree;
@@ -37,5 +37,7 @@ t_bstree	*gs_bstree_predecessor(	t_bstree *bstree, void *data,
 //void		*gs_bstree_apply_preorder(t_bstree *bstree, void *data);
 //void		*gs_bstree_apply_inorder(t_bstree *bstree, void *data);
 //void		*gs_bstree_apply_postorder(t_bstree *bstree, void *data);
+
+void		gs_bstree_print(t_bstree *bstree);
 
 #endif
