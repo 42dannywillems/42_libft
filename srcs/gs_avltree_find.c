@@ -1,16 +1,16 @@
 #include "libft.h"
 
-t_bstree	*gs_bstree_find(t_bstree *bstree, void *data,
+t_avltree	*gs_avltree_find(t_avltree *avltree, void *data,
 							int cmp(void *, void *))
 {
-	if (bstree)
+	if (avltree)
 	{
-		if (cmp(bstree->data, data) == 0)
-			return (bstree);
-		else if (cmp(bstree->data, data) < 0)
-			return (gs_bstree_find(bstree->right, data, cmp));
+		if (cmp(avltree->data, data) == 0)
+			return (avltree);
+		else if (cmp(avltree->data, data) < 0)
+			return (gs_avltree_find(avltree->right, data, cmp));
 		else
-			return (gs_bstree_find(bstree->left, data, cmp));
+			return (gs_avltree_find(avltree->left, data, cmp));
 	}
 	return (NULL);
 }

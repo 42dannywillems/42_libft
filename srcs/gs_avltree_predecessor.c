@@ -1,11 +1,11 @@
 #include "libft.h"
 
-t_bstree	*gs_bstree_predecessor(	t_bstree *bstree, void *data,
+t_avltree	*gs_avltree_predecessor(	t_avltree *avltree, void *data,
 									int cmp(void *, void *))
 {
-	t_bstree *tmp;
+	t_avltree *tmp;
 	
-	tmp = gs_bstree_find(bstree, data, cmp);
+	tmp = gs_avltree_find(avltree, data, cmp);
 	if (tmp)
 		return (tmp->parent);
 	else

@@ -1,13 +1,13 @@
 #include "libft.h"
 
-/* No need to check if there's a right child because gs_bstree_min return NULL
- * if the bstree passed as argument is NULL */
-t_bstree	*gs_bstree_successor(	t_bstree *bstree, void *data,
+/* No need to check if there's a right child because gs_avltree_min return NULL
+ * if the avltree passed as argument is NULL */
+t_avltree	*gs_avltree_successor(	t_avltree *avltree, void *data,
 									int cmp(void *, void *))
 {
-	t_bstree *tmp;
+	t_avltree *tmp;
 
-	tmp = gs_bstree_find(bstree, data, cmp);
+	tmp = gs_avltree_find(avltree, data, cmp);
 	ISNULL(tmp);
-	return (gs_bstree_min(tmp->right));
+	return (gs_avltree_min(tmp->right));
 }

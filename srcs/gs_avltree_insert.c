@@ -1,31 +1,31 @@
 #include "libft.h"
 
-t_bstree	*gs_bstree_insert(	t_bstree *bstree, void *data,
+t_avltree	*gs_avltree_insert(	t_avltree *avltree, void *data,
 								int cmp(void *, void *))
 {
-	t_bstree	*tmp;
+	t_avltree	*tmp;
 
-	if (bstree)
+	if (avltree)
 	{
-		if (cmp(bstree->data, data) < 0 && (tmp = gs_bstree_create(data)))
+		if (cmp(avltree->data, data) < 0 && (tmp = gs_avltree_create(data)))
 		{
-			if (bstree->right)
-				return (gs_bstree_insert(bstree->right, data, cmp));
-			bstree->right = tmp;
-			tmp->parent = bstree;
+			if (avltree->right)
+				return (gs_avltree_insert(avltree->right, data, cmp));
+			avltree->right = tmp;
+			tmp->parent = avltree;
 		}
-		else if (cmp(bstree->data, data) > 0 && (tmp = gs_bstree_create(data)))
+		else if (cmp(avltree->data, data) > 0 && (tmp = gs_avltree_create(data)))
 		{
-			if (bstree->left)
-				return (gs_bstree_insert(bstree->left, data, cmp));
-			bstree->left = tmp;
-			tmp->parent = bstree;
+			if (avltree->left)
+				return (gs_avltree_insert(avltree->left, data, cmp));
+			avltree->left = tmp;
+			tmp->parent = avltree;
 		}
-		else if (cmp(bstree->data, data) == 0)
-			return (bstree);
+		else if (cmp(avltree->data, data) == 0)
+			return (avltree);
 		else
 			return (tmp);
 	}
-	bstree = gs_bstree_create(data);
-	return (bstree);
+	avltree = gs_avltree_create(data);
+	return (avltree);
 }
