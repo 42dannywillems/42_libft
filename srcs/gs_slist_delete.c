@@ -11,7 +11,7 @@
 
 #include "libft.h"
 
-t_slist	*gs_slist_delete(t_slist *list, void *data, int cmp())
+t_slist	*gs_slist_delete(t_slist *list, void *data, int cmp(void *, void *))
 {
 	t_slist *tmp;
 

@@ -13,7 +13,7 @@
 
 
 t_slist	*gs_slist_delete_first(	t_slist *list, void *data,
-								int cmp())
+								int cmp(void *, void *))
 {
 	t_slist *tmp;
 
