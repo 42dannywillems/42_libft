@@ -1,3 +1,13 @@
+/**
+ * t_slist	*gs_slist_merge(t_slist *list1, t_slist *list2)
+ *
+ * Merge list1 with list2 by adding list2 to the end of list1. It modifies
+ * directly list1, and return a pointer to the first node of list1.
+ * list1 must be not empty.
+ *
+ * DO NOT USE.
+ */
+
 #include "gs_slist.h"
 
 t_slist	*gs_slist_merge(t_slist *list1, t_slist *list2)
