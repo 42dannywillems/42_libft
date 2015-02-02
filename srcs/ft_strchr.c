@@ -5,7 +5,7 @@
  * \fn char *ft_strchr(const char *s, int c)
  * \brief Same as strchr in the standard library
  *
- * strchr implementation. Return NULL.
+ * strchr implementation.
  */
 
 #include "libft.h"
