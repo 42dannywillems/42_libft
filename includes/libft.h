@@ -62,7 +62,6 @@ void	*ft_memchr(const void *s, int c, size_t n);
 /* String manipulation functions */
 // Free
 void	ft_strdel(char **as);
-char	*ft_strndel(char **as, size_t n);
 void	ft_strclr(char *s);
 
 // Create
