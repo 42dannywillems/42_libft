@@ -10,11 +10,14 @@
 #include "gs_stack.h"
 #include "gs_bstree.h"
 #include "gs_avltree.h"
+#include "ft_get_next_line.h"
 
 # define ISNULL(x)			if (((x)) == NULL) return (NULL)
 # define ISNULL_ZERO(x)		if (((x)) == NULL) return (0)
 # define ISZERO(x)			if (((x)) == 0) return (0)
 # define ISZERO_NULL(x)		if (((x)) == 0) return (NULL)
+
+# define BUFSIZE 10
 
 typedef struct	s_list
 {
