@@ -1,11 +1,11 @@
-<div style="text-align:center" markdown="1">
 #42 libft
 
 DO NOT USE NOW. DOCUMENTATION AND TESTS MUST BE DONE.
 
 -- Need description --
 
-##Version 1.0 (v1.0)</div>
+###Version 1.0 (v1.0)
+
 ####New :
 
     * Some standard functions
