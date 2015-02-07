@@ -25,7 +25,6 @@ t_slist	*gs_slist_push_front(t_slist *list, void *data);
 t_slist	*gs_slist_merge(t_slist *list1, t_slist *list2);
 t_slist	*gs_slist_reverse(t_slist *list); // To_check
 
-// OK
 t_slist	*gs_slist_at(t_slist *list, pos_t i);
 t_slist	*gs_slist_find(	t_slist *list, void *data_ref,
 						int (*cmp)(void *, void *));
