@@ -13,6 +13,7 @@ typedef struct		s_slist
 t_slist	*gs_slist_create(void *data, t_slist *next);
 void	gs_slist_clear(t_slist **list);
 t_slist *gs_slist_pop(t_slist **list);
+t_slist *gs_slist_delete_nth(t_slist **list, pos_t i);
 // Not Tested
 t_slist	*gs_slist_delete(t_slist *list, void *data, int cmp(void *, void *));
 // Not Tested
