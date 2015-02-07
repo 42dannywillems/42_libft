@@ -39,8 +39,9 @@ DO NOT USE NOW. DOCUMENTATION AND TESTS MUST BE DONE.
 
 ####To do :
     * Data structures :
-        * pop in Stack implementation
+        * pop in Stack implementation (Done : 07022015)
         * del_at in Single Linked List implementation (delete the ith node)
+		  (Done : 07022015)
         * Double Linked List implementation
         * Queue implementation
         * Binary Tree implementation
