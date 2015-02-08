@@ -1,12 +1,16 @@
 /**
- * DO NOT USE. NOT TESTED AND ALGORITHM NOT CHECKED.
+ * \file gs_bstree_max.c
+ * \author Danny Willems
+ *
+ * \fn t_bstree *gs_bstree_max(t_bstree *bstree)
+ * \brief Return the node containing the maximum data of the bstree.
  */
 
 #include "libft.h"
 
 t_bstree	*gs_bstree_max(t_bstree *bstree)
 {
-	ISNULL(bstree);
-	ISNULL(bstree->right);
-	return (gs_bstree_max(bstree->right));
+	if (gs_bstree_haschild(bstree, RIGHT))
+		return (gs_bstree_max(bstree->right));
+	return (bstree);
 }
