@@ -4,16 +4,17 @@
 
 #include "libft.h"
 
-t_bstree	*gs_bstree_create(void *data)
+t_bstree	*gs_bstree_create(	void *data, t_bstree *parent, t_bstree *left,
+								t_bstree *right)
 {
 	t_bstree	*bstree;
 
-	if ((bstree = (t_bstree *)malloc(sizeof(bstree))))
+	if ((bstree = (t_bstree *)malloc(sizeof(t_bstree))))
 	{
-		bstree->parent = NULL;
-		bstree->left = NULL;
-		bstree->right = NULL;
 		bstree->data = data;
+		bstree->parent = parent;
+		bstree->left = left;
+		bstree->right = right;
 	}
 	return (bstree);
 }
