@@ -29,7 +29,7 @@ t_bstree	*gs_bstree_successor(	t_bstree *bstree, void *data,
 									int cmp(void *, void *));
 t_bstree	*gs_bstree_predecessor(	t_bstree *bstree, void *data,
 									int cmp(void *, void *));
-t_bstree	*gs_bstree_insert(	t_bstree *bstree, void *data,
+t_bstree	*gs_bstree_insert(	t_bstree **bstree, void *data,
 								int cmp(void *, void *));
 t_bstree	*gs_bstree_find(t_bstree *bstree, void *data,
 							int cmp(void *, void *));
@@ -40,7 +40,6 @@ t_bstree	*gs_bstree_find(t_bstree *bstree, void *data,
 //void		*gs_bstree_apply_preorder(t_bstree *bstree, void *data);
 //void		*gs_bstree_apply_inorder(t_bstree *bstree, void *data);
 //void		*gs_bstree_apply_postorder(t_bstree *bstree, void *data);
-
-void		gs_bstree_print(t_bstree *bstree);
+//void		gs_bstree_print(t_bstree *bstree);
 
 #endif

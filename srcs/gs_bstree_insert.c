@@ -9,36 +9,40 @@
 
 #include "libft.h"
 
-t_bstree	*gs_bstree_insert(	t_bstree *bstree, void *data,
+t_bstree	*gs_bstree_insert(	t_bstree **bstree, void *data,
 								int cmp(void *, void *))
 {
 	t_bstree *tmp;
 
-	if (!gs_bstree_isempty(bstree))
+	if (!gs_bstree_isempty(*bstree))
 	{
-		if (cmp(bstree->data, data) < 0)
+		if (cmp((*bstree)->data, data) < 0)
 		{
-			if (gs_bstree_haschild(bstree, RIGHT))
-				return (gs_bstree_insert(bstree->right, data, cmp));
-			else if ((tmp = gs_bstree_create(data, bstree, NULL, NULL)))
+			if (gs_bstree_haschild(*bstree, RIGHT))
+				return (gs_bstree_insert(&((*bstree)->right), data, cmp));
+			else if ((tmp = gs_bstree_create(data, *bstree, NULL, NULL)))
 			{
-				bstree->right = tmp;
+				(*bstree)->right = tmp;
 				return (tmp);
 			}
 			return (NULL);
 		}
-		else if (cmp(bstree->data, data) > 0)
+		else if (cmp((*bstree)->data, data) > 0)
 		{
-			if (gs_bstree_haschild(bstree, LEFT))
-				return (gs_bstree_insert(bstree->left, data, cmp));
-			else if ((tmp = gs_bstree_create(data, bstree, NULL, NULL)))
+			if (gs_bstree_haschild(*bstree, LEFT))
+				return (gs_bstree_insert(&((*bstree)->left), data, cmp));
+			else if ((tmp = gs_bstree_create(data, *bstree, NULL, NULL)))
 			{
-				bstree->left = tmp;
+				(*bstree)->left = tmp;
 				return (tmp);
 			}
 			return (NULL);
 		}
-		return (bstree);
+		return (*bstree);
 	}
-	return (gs_bstree_create(data, NULL, NULL, NULL));
+	if (*bstree)
+		(*bstree)->data = data;
+	else
+		*bstree = gs_bstree_create(data, NULL, NULL, NULL);
+	return (*bstree);
 }
