@@ -21,10 +21,11 @@ t_bstree	*gs_bstree_create(	void *data, t_bstree *parent, t_bstree *left,
 								t_bstree *right);
 bool_t		gs_bstree_isempty(const t_bstree *bstree);
 bool_t		gs_bstree_isleaf(const t_bstree *bstree);
+bool_t		gs_bstree_haschild(t_bstree *bstree, int child);
 size_t		gs_bstree_height(const t_bstree *bstree);
+t_bstree	*gs_bstree_min(t_bstree *bstree);
 
 /* NOT TESTED !! */
-t_bstree	*gs_bstree_min(t_bstree *bstree);
 t_bstree	*gs_bstree_max(t_bstree *bstree);
 t_bstree	*gs_bstree_find(t_bstree *bstree, void *data,
 							int cmp(void *, void *));
