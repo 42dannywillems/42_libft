@@ -18,7 +18,8 @@ typedef struct		s_bstree
 
 /* NOT TESTED !! */
 
-t_bstree	*gs_bstree_create(void *data);
+t_bstree	*gs_bstree_create(	void *data, t_bstree *parent, t_bstree *left,
+								t_bstree *right);
 bool_t		gs_bstree_isempty(const t_bstree *bstree);
 bool_t		gs_bstree_isleaf(const t_bstree *bstree);
 size_t		gs_bstree_height(const t_bstree *bstree);
