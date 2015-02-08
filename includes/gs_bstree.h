@@ -25,18 +25,18 @@ bool_t		gs_bstree_haschild(t_bstree *bstree, int child);
 size_t		gs_bstree_height(const t_bstree *bstree);
 t_bstree	*gs_bstree_min(t_bstree *bstree);
 t_bstree	*gs_bstree_max(t_bstree *bstree);
-
-/* NOT TESTED !! */
-t_bstree	*gs_bstree_find(t_bstree *bstree, void *data,
-							int cmp(void *, void *));
-t_bstree	*gs_bstree_insert(	t_bstree *bstree, void *data,
-								int cmp(void *, void *));
-//t_bstree	*gs_bstree_delete(	t_bstree *bstree, void *data,
-//								int cmp(void *, void *));
 t_bstree	*gs_bstree_successor(	t_bstree *bstree, void *data,
 									int cmp(void *, void *));
 t_bstree	*gs_bstree_predecessor(	t_bstree *bstree, void *data,
 									int cmp(void *, void *));
+t_bstree	*gs_bstree_insert(	t_bstree *bstree, void *data,
+								int cmp(void *, void *));
+t_bstree	*gs_bstree_find(t_bstree *bstree, void *data,
+							int cmp(void *, void *));
+
+/* NOT TESTED !! */
+//t_bstree	*gs_bstree_delete(	t_bstree *bstree, void *data,
+//								int cmp(void *, void *));
 //void		*gs_bstree_apply_preorder(t_bstree *bstree, void *data);
 //void		*gs_bstree_apply_inorder(t_bstree *bstree, void *data);
 //void		*gs_bstree_apply_postorder(t_bstree *bstree, void *data);

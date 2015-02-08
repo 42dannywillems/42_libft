@@ -1,5 +1,10 @@
 /**
- * DO NOT USE. NOT TESTED AND ALGORITHM NOT CHECKED.
+ * \file gs_bstree_find.c
+ * \author Danny Willems
+ *
+ * \fn t_bstree *gs_bstree_find(t_bstree *bstree, void *data,
+								int cmp(void *, void *))
+ * \brief Find data in bstree. If data is not present in bstree, return NULL.
  */
 
 #include "libft.h"
