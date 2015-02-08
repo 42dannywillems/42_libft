@@ -1,14 +1,18 @@
 /**
- * DO NOT USE. NOT TESTED AND ALGORITHM NOT CHECKED.
+ * \file gs_avltree_height.c
+ * \author Danny Willems
+ *
+ * \fn size_t gs_avltree_height(const t_avltree *avltree)
+ * \brief Return the height of avltree.
+ *
+ * Return 0 if the avltree is empty.
  */
 
 #include "libft.h"
 
-size_t		gs_avltree_height(t_avltree *avltree)
+size_t		gs_avltree_height(const t_avltree *avltree)
 {
 	if (avltree)
-		return (1 + MATH_MAX(	gs_avltree_height(avltree->left),
-								gs_avltree_height(avltree->right)));
-	else
-		return (0);
+		return (avltree->height);
+	return (0);
 }
