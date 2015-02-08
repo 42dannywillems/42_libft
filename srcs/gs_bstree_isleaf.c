@@ -7,5 +7,7 @@
 
 bool_t		gs_bstree_isleaf(const t_bstree *bstree)
 {
-	return (bstree->left == NULL && bstree->right == NULL);
+	if (bstree)
+		return (bstree->left == NULL && bstree->right == NULL);
+	return (TRUE);
 }
