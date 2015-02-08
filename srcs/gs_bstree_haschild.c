@@ -1,5 +1,3 @@
-#include "libft.h"
-
 /**
  * \file gs_bstree_haschild.c
  * \author Danny Willems
@@ -9,7 +7,9 @@
  * to left (resp. right).
 */
 
-bool_t gs_bstree_haschild(t_bstree *bstree, int child)
+#include "libft.h"
+
+bool_t gs_bstree_haschild(const t_bstree *bstree, int child)
 {
 	if (bstree)
 	{
