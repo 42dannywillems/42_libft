@@ -16,7 +16,7 @@ t_bstree	*gs_bstree_successor(	t_bstree *bstree, void *data,
 {
 	t_bstree *tmp;
 
-	if (tmp = gs_bstree_find(bstree, data, cmp))
+	if ((tmp = gs_bstree_find(bstree, data, cmp)))
 		return (gs_bstree_min(tmp->right));
 	return (NULL);
 }
