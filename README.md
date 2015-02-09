@@ -41,7 +41,13 @@ DO NOT USE NOW. DOCUMENTATION AND TESTS MUST BE DONE.
     * Data structures :
         * pop in Stack implementation (Done : 07022015)
         * del_at in Single Linked List implementation (delete the ith node)
-		  (Done : 07022015)
+          (Done : 07022015)
+        * Sorted Single Linked List :
+            * Same as slist :
+                create, pop, clear, delete, delete_nth, delete_first, size,
+                isempty, at, find.
+            * Independant implementation :
+                insert, merge.
         * Double Linked List implementation
         * Queue implementation
         * Binary Tree implementation
