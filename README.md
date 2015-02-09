@@ -45,7 +45,7 @@ DO NOT USE NOW. DOCUMENTATION AND TESTS MUST BE DONE.
         * Sorted Single Linked List :
             * Same as slist :
                 create, pop, clear, delete, delete_nth, delete_first, size,
-                isempty, at, find.
+                isempty, at, find. (DONE : 09022015)
             * Independant implementation :
                 insert, merge.
         * Double Linked List implementation
