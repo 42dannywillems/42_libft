@@ -11,25 +11,23 @@ t_avltree	*gs_avltree_insert(	t_avltree *avltree, void *data,
 
 	if (avltree)
 	{
-		if (cmp(avltree->data, data) < 0 && (tmp = gs_avltree_create(data, NULL, NULL, NULL)))
+		if (cmp(avltree->data, data) < 0 && (tmp = gs_avltree_create(data, NULL, NULL)))
 		{
 			if (avltree->right)
 				return (gs_avltree_insert(avltree->right, data, cmp));
 			avltree->right = tmp;
-			tmp->parent = avltree;
 		}
-		else if (cmp(avltree->data, data) > 0 && (tmp = gs_avltree_create(data, NULL, NULL, NULL)))
+		else if (cmp(avltree->data, data) > 0 && (tmp = gs_avltree_create(data, NULL, NULL)))
 		{
 			if (avltree->left)
 				return (gs_avltree_insert(avltree->left, data, cmp));
 			avltree->left = tmp;
-			tmp->parent = avltree;
 		}
 		else if (cmp(avltree->data, data) == 0)
 			return (avltree);
 		else
 			return (tmp);
 	}
-	avltree = gs_avltree_create(data, NULL, NULL, NULL);
+	avltree = gs_avltree_create(data, NULL, NULL);
 	return (avltree);
 }
