@@ -16,10 +16,14 @@ typedef struct	s_avltree
 /* ----------  end of struct avltree  ---------- */
 
 t_avltree	*gs_avltree_create(void *data, t_avltree *left, t_avltree *right);
+
 bool_t		gs_avltree_isempty(const t_avltree *avltree);
 bool_t		gs_bstree_isleaf(const t_bstree *bstree);
 bool_t		gs_avltree_haschild(const t_avltree *avltree, int child);
+
 size_t		gs_avltree_height(const t_avltree *avltree);
+int			gs_avltree_balanced(t_avltree *avltree);
+
 t_avltree	*gs_avltree_min(t_avltree *avltree);
 t_avltree	*gs_avltree_max(t_avltree *avltree);
 t_avltree	*gs_avltree_successor(	t_avltree *avltree, void *data,
