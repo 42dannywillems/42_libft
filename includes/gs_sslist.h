@@ -15,6 +15,7 @@
 # define gs_sslist_isempty(x)				gs_slist_isempty(x)
 # define gs_sslist_at(x, y)					gs_slist_at(x, y)
 # define gs_sslist_find(x, y, z)			gs_slist_find(x, y, z)
+# define gs_sslist_print(x)					gs_slist_print(x)
 
 t_sslist	*gs_sslist_insert(	t_sslist *list, void *data,
 								int cmp(void *, void*));
