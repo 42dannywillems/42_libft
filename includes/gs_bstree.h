@@ -8,7 +8,6 @@
 typedef struct		s_bstree 
 {
 			void			*data;
-			struct s_bstree *parent;
 			struct s_bstree *left;
 			struct s_bstree *right;
 			//int			cmp(void *, void *);
@@ -17,8 +16,7 @@ typedef struct		s_bstree
 /* ----------  end of struct bstree  ---------- */
 
 
-t_bstree	*gs_bstree_create(	void *data, t_bstree *parent, t_bstree *left,
-								t_bstree *right);
+t_bstree	*gs_bstree_create(void *data, t_bstree *left, t_bstree *right);
 bool_t		gs_bstree_isempty(const t_bstree *bstree);
 bool_t		gs_bstree_isleaf(const t_bstree *bstree);
 bool_t		gs_bstree_haschild(const t_bstree *bstree, int child);

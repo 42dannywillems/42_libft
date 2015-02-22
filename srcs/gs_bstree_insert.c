@@ -20,7 +20,7 @@ t_bstree	*gs_bstree_insert(	t_bstree **bstree, void *data,
 		{
 			if (gs_bstree_haschild(*bstree, RIGHT))
 				return (gs_bstree_insert(&((*bstree)->right), data, cmp));
-			else if ((tmp = gs_bstree_create(data, *bstree, NULL, NULL)))
+			else if ((tmp = gs_bstree_create(data, NULL, NULL)))
 			{
 				(*bstree)->right = tmp;
 				return (tmp);
@@ -31,7 +31,7 @@ t_bstree	*gs_bstree_insert(	t_bstree **bstree, void *data,
 		{
 			if (gs_bstree_haschild(*bstree, LEFT))
 				return (gs_bstree_insert(&((*bstree)->left), data, cmp));
-			else if ((tmp = gs_bstree_create(data, *bstree, NULL, NULL)))
+			else if ((tmp = gs_bstree_create(data, NULL, NULL)))
 			{
 				(*bstree)->left = tmp;
 				return (tmp);
@@ -43,6 +43,6 @@ t_bstree	*gs_bstree_insert(	t_bstree **bstree, void *data,
 	if (*bstree)
 		(*bstree)->data = data;
 	else
-		*bstree = gs_bstree_create(data, NULL, NULL, NULL);
+		*bstree = gs_bstree_create(data, NULL, NULL);
 	return (*bstree);
 }
