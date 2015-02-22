@@ -7,6 +7,7 @@
 #include "math42.h"
 #include "gs_typedef.h"
 #include "gs_slist.h"
+#include "gs_sslist.h"
 #include "gs_stack.h"
 #include "gs_bstree.h"
 #include "gs_avltree.h"

@@ -1,11 +1,16 @@
 /**
- * DO NOT USE. NOT TESTED AND ALGORITHM NOT CHECKED.
+ * \file gs_avltree_find.c
+ * \author Danny Willems
+ *
+ * \fn t_avltree *gs_avltree_find(t_avltree *avltree, void *data,
+								int cmp(void *, void *))
+ * \brief Find data in avltree. If data is not present in avltree, return NULL.
  */
 
 #include "libft.h"
 
-t_avltree	*gs_avltree_find(t_avltree *avltree, void *data,
-							int cmp(void *, void *))
+t_avltree	*gs_avltree_find(	t_avltree *avltree, void *data,
+								int cmp(void *, void *))
 {
 	if (avltree)
 	{

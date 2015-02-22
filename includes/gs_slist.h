@@ -12,7 +12,8 @@ typedef struct		s_slist
 
 t_slist	*gs_slist_create(void *data, t_slist *next);
 void	gs_slist_clear(t_slist **list);
-// Not Tested
+t_slist *gs_slist_pop(t_slist **list);
+t_slist *gs_slist_delete_nth(t_slist **list, pos_t i);
 t_slist	*gs_slist_delete(t_slist *list, void *data, int cmp(void *, void *));
 // Not Tested
 t_slist	*gs_slist_delete_first(	t_slist *list, void *data,
@@ -22,9 +23,8 @@ bool_t	gs_slist_isempty(const t_slist *list);
 
 t_slist	*gs_slist_push_front(t_slist *list, void *data);
 t_slist	*gs_slist_merge(t_slist *list1, t_slist *list2);
-t_slist	*gs_slist_reverse(t_slist *list); // To_check
+t_slist	*gs_slist_reverse(t_slist *list);
 
-// OK
 t_slist	*gs_slist_at(t_slist *list, pos_t i);
 t_slist	*gs_slist_find(	t_slist *list, void *data_ref,
 						int (*cmp)(void *, void *));
