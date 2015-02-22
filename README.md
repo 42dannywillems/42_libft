@@ -4,10 +4,22 @@ DO NOT USE NOW. DOCUMENTATION AND TESTS MUST BE DONE.
 
 -- Need description --
 
+###Version 1.1 (v1.1)
+
+####New :
+    * Data structures
+        * pop in Stack implementation
+        * del_at in Single Linked List implementation (delete the ith node)
+        * Sorted Single Linked List :
+            * Same as slist :
+                create, pop, clear, delete, delete_nth, delete_first, size,
+                isempty, at, find.
+            * Independant implementation :
+                insert, merge.
+
 ###Version 1.0 (v1.0)
 
 ####New :
-
     * Some standard functions
         atoi, bzero, memalloc, memccpy, memchr, memcmp, memcpy, memdel, memmove,
         memrchr, memset, strcat, strchr, strcmp, strcpy, strdup, strequ,
@@ -38,16 +50,7 @@ DO NOT USE NOW. DOCUMENTATION AND TESTS MUST BE DONE.
         * Get next line from a file. Multiple file descriptors can be used at the same time. (ft_get_next_line)
 
 ####To do :
-    * Data structures :
-        * pop in Stack implementation (Done : 07022015)
-        * del_at in Single Linked List implementation (delete the ith node)
-          (Done : 07022015)
-        * Sorted Single Linked List :
-            * Same as slist :
-                create, pop, clear, delete, delete_nth, delete_first, size,
-                isempty, at, find. (DONE : 09022015)
-            * Independant implementation :
-                insert, merge.
+    * Data structures
         * Double Linked List implementation
         * Queue implementation
         * Binary Tree implementation
