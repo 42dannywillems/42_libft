@@ -6,39 +6,59 @@
 									int cmp(void *, void *))
  * \brief Insert data in the sorted linked list, keeping the list sorted.
  *
- * TO TEST !
+ * If the list is empty, it creates a new list or modify the 'data' attribute.
+ * If data is in the list, it doesn't insert it !
+ * Return the first element of the list.
  */
 
 #include "libft.h"
 #include "gs_sslist.h"
 
-t_sslist	*gs_sslist_insert(	t_sslist *list, void *data,
-								int cmp(void *, void *))
+static t_sslist		*gs_sslist_insert_empty(t_sslist *list, void *data)
 {
-	t_sslist *previous;
-	t_sslist *ret;
+	if (list)
+		list->data = data;
+	else
+		list = gs_sslist_create(data, NULL);
+	return (list);
+}
+
+static t_sslist		*gs_sslist_insert_in(	t_sslist *list, void *data,
+											int cmp(void *, void *))
+{
+	t_sslist	*previous;
+	t_sslist	*ret;
+	int			result;
 
 	ret = list;
-	previous = NULL;
-	if (gs_sslist_isempty(list))
+	previous = list;
+	while (list)
 	{
-		if (list)
-			list->data = data;
-		else
-			list = gs_sslist_create(data, NULL);
-		return (ret);
-	}
-	while (list->next)
-	{
-		if (cmp(list->data, data) < 0)
+		result = cmp(list->data, data);
+		if (result < 0)
 		{
 			previous = list;
 			list = list->next;
 		}
+		else if (result == 0)
+			return (ret);
 		else
+		{
 			previous->next = gs_sslist_create(data, list);
+			return (ret);
+		}
 	}
-	if (gs_sslist_isempty(list->next))
-		list->next = gs_sslist_create(data, NULL);
+	previous->next = gs_sslist_create(data, list);
 	return (ret);
+}
+t_sslist	*gs_sslist_insert(	t_sslist *list, void *data,
+								int cmp(void *, void *))
+{
+
+	if (gs_sslist_isempty(list))
+		return (gs_sslist_insert_empty(list, data));
+	else if (cmp(list->data, data) > 0)
+		return (gs_sslist_create(data, list));
+	else
+		return (gs_sslist_insert_in(list, data, cmp));
 }
