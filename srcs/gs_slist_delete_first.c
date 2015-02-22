@@ -5,8 +5,10 @@
  * \fn t_slist	*gs_slist_delete_first(	t_slist *list, void *data, int cmp())
  * \brief Delete first occurence of data and return it.
  *
- * Delete first occurence data and return it.
+ * Delete first occurence 'data' and return the element at the head of the list
+ * after deleting the node containing 'data'.
  * See gs_slist_delete to delete all occurences data.
+ * !!! Don't free the 'data' attribute !!!
  */
 
 #include "libft.h"
