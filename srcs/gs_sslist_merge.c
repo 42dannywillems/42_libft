@@ -7,7 +7,10 @@
  * \brief Merge two sorted list in the first by inserting each data of the
  * second list in the first, and keep sorted the first list.
  *
- * TO TEST !
+ * Insert each element in l1.
+ * If l2 is empty, it does nothing.
+ * If l1 is empty, it copy all element of l2 and insert it in l1
+ * Return the first element of the first list.
  */
 
 #include "libft.h"
