@@ -38,6 +38,6 @@ t_bstree	*gs_bstree_find(t_bstree *bstree, void *data,
 //void		*gs_bstree_apply_preorder(t_bstree *bstree, void *data);
 //void		*gs_bstree_apply_inorder(t_bstree *bstree, void *data);
 //void		*gs_bstree_apply_postorder(t_bstree *bstree, void *data);
-//void		gs_bstree_print(t_bstree *bstree);
+void		gs_bstree_print(t_bstree *bstree);
 
 #endif
