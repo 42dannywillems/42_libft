@@ -1,8 +1,8 @@
 #ifndef GS_SSLIST_H
 # define GS_SSLIST_H
 
-# include <stdlib.h>
 # include "gs_typedef.h"
+# include "libft.h"
 
 # define t_sslist							t_slist
 # define gs_sslist_create(x, y)				gs_slist_create(x, y)
@@ -25,5 +25,4 @@ t_sslist	*gs_sslist_merge(	t_sslist *list1, t_sslist *list2,
 // To_check
 //char	**gs_sslist_toarray(t_slist *list, bool_t delete_list);
 
-//void	gs_sslist_print(t_slist *list);
 #endif
