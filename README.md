@@ -1,8 +1,12 @@
 #42 libft
 
-DO NOT USE NOW. DOCUMENTATION AND TESTS MUST BE DONE.
+DOCUMENTATION MUST BE DONE.
 
--- Need description --
+42_libft is a C library containing functions which stdlib implements. This is
+the first project in 42.
+
+Unlike stdlib, 42_libft has data structures implementations such as stacks,
+single and double linked list, tree, etc.
 
 ###Version 1.1 (v1.1)
 
@@ -40,11 +44,11 @@ DO NOT USE NOW. DOCUMENTATION AND TESTS MUST BE DONE.
     * Strings manipulations
         * Split a string relatively to a character or a string (ft_split[_str]). Particulary, split a string relatively to whitespaces (ft_splitwhitespaces).
         * Realloc a string with a precise size. (ft_str_realloc)
-        * Join two strings [and free first aguments] (ft_strjoin[_free]) 
+        * Join two strings [and free first aguments] (ft_strjoin[_free])
         * Apply a function on each character of a string. (ft_striter[i], ft_strmap[i])
         * Transform an array of string in a single string depending on a join string. (ft_array_join)
         * Check character type (alpha, numeric, ascii, etc).
-        * Get a substring of a string. (ft_substring) 
+        * Get a substring of a string. (ft_substring)
         * Free a string (ft_strdel)
     * Read files
         * Get next line from a file. Multiple file descriptors can be used at the same time. (ft_get_next_line)
