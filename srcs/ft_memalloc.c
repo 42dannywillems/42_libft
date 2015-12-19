@@ -1,15 +1,14 @@
-/**
- * \file ft_memalloc.c
- * \author Danny Willems
- *
- * \fn void *ft_memalloc(size_t size)
- * \brief Same as memalloc in the standard library
- *
- * memalloc implementation.
- *
- * NULL is checked in ft_memset.
- * So don't need to check before ft_memset
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memalloc.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 12:12:19 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 12:12:22 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 

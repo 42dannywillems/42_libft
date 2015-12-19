@@ -1,12 +1,14 @@
-/**
- * \file ft_striter.c
- * \author Danny Willems
- *
- * \fn void ft_striter(char *s, void (*f)(char *))
- * \brief Apply f to each element of s.
- *
- * Apply f to each element of s. Do not modify the string s.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_striter.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 13:40:23 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 13:41:22 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 

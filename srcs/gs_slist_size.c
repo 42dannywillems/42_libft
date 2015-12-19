@@ -1,12 +1,14 @@
-/**
- * \file gs_slist_size.c
- * \author Danny Willems
- *
- * \fn t_slist *gs_slist_size(t_slist *list)
- * \brief Get the linked list size.
- *
- * Returns list size.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   gs_slist_size.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 14:13:04 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 14:14:22 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "gs_slist.h"
 

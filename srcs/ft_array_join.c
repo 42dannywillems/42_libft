@@ -6,7 +6,7 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/29 16:55:01 by dwillems          #+#    #+#             */
-/*   Updated: 2015/11/29 17:05:56 by dwillems         ###   ########.fr       */
+/*   Updated: 2015/12/19 11:42:53 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_array_join(const char **s, const char *join)
 	size_t	len_array;
 	size_t	len_join;
 	size_t	len_str;
-	char *str;
+	char	*str;
 
 	len_array = ft_array_len(s);
 	len_join = ft_strlen(join);
@@ -35,4 +35,3 @@ char	*ft_array_join(const char **s, const char *join)
 	str[len_str] = '\0';
 	return (str);
 }
-

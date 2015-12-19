@@ -1,13 +1,14 @@
-/**
- * \file gs_slist_clear.c
- * \author Danny Willems
- *
- * \fn void gs_slist_clear(t_slist **list)
- * \brief Clear list.
- *
- * Free the entire linked list.
- * You need to free manually each data element.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   gs_slist_clear.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 14:12:58 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 14:13:24 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "gs_slist.h"
 

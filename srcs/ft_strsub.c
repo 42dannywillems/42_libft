@@ -1,13 +1,14 @@
-/**
- * \file ft_strsub.c
- * \author Danny Willems
- *
- * \fn char *ft_strsub(char const *s, unsigned int start, size_t len)
- * \brief Return a new string containing data from s + start to s + start + len.
- *
- * Return a new string containing data from s + start to s + start + len.
- * Return NULL if s is NULL or if there's an allocation error.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strsub.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 14:05:34 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 14:05:43 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 

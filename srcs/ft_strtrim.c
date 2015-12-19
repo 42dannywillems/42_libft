@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 14:06:53 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 14:08:40 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strtrim(char const *s)
@@ -17,7 +29,7 @@ char	*ft_strtrim(char const *s)
 	while (s[i])
 	{
 		read = FALSE;
-		while(s[i] && ft_isblankspace(s[i]))
+		while (s[i] && ft_isblankspace(s[i]))
 			i++;
 		while (s[i] && !ft_isblankspace(s[i]))
 		{

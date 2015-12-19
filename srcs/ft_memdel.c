@@ -1,12 +1,14 @@
-/**
- * \file ft_memdel.c
- * \author Danny Willems
- *
- * \fn void ft_memdel(void **a)
- * \brief Same as memdel in the standard library
- *
- * memdel implementation.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memdel.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 12:18:01 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 12:18:03 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 

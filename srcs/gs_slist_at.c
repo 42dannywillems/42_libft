@@ -1,12 +1,14 @@
-/**
- * \file gs_slist_at.c
- * \author Danny Willems
- *
- * \fn t_slist *gs_slist_at(t_slist *list, pos_t i)
- * \brief Get ith node.
- * 
- * Return the node at the position i in the linked list begin with list.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   gs_slist_at.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 14:12:58 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 14:13:20 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "gs_slist.h"
 

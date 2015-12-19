@@ -1,12 +1,14 @@
-/**
- * \file ft_memset.c
- * \author Danny Willems
- *
- * \fn void *ft_memset(void *s, int c, size_t n)
- * \brief Same as memset in the standard library
- *
- * memset implementation.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 12:30:18 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 12:30:22 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 

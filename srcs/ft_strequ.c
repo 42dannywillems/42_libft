@@ -1,12 +1,14 @@
-/**
- * \file ft_strequ.c
- * \author Danny Willems
- *
- * \fn bool_t ft_strequ(char const *s1, char const *s2)
- * \brief Same as strequ in the standard library.
- *
- * strequ implementation. Return NULL if one of the arguments is NULL.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strequ.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 13:39:52 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 13:40:02 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 

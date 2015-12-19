@@ -1,12 +1,14 @@
-/**
- * \file ft_strlen.c
- * \author Danny Willems
- *
- * \fn char *ft_strlen(char *dest, const char *src)
- * \brief Same as strlen in the standard library
- *
- * strlen implementation. Return 0 if the argument is NULL.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 13:44:06 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 13:44:06 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 

@@ -1,14 +1,14 @@
-/**
- * \file gs_slist_find_max.c
- * \author Danny Willems
- *
- * \fn t_slist	*gs_slist_find_max(t_slist *list, int (*cmp)())
- * \brief Find max element, and return the node containing it.
- *
- * Return the max value (according to the cmp function) in the linked list
- * beginning with list.
- * -- Describe cmp. Add the void argument it takes --
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   gs_slist_find_max.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 14:17:25 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 14:17:25 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "gs_slist.h"
 

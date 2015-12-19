@@ -1,13 +1,14 @@
-/**
- * \file ft_strstr_p.c
- * \author Danny Willems
- *
- * \fn int ft_strstr_p(const char *haystack, const char *needle)
- * \brief Return position of the first occurence needle in haystack.
- *
- * Return position of the first occurence needle in haystack. Return -1 if
- * needle is not in haystack.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strstr_p.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 14:05:16 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 14:05:16 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 

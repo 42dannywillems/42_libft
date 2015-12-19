@@ -1,20 +1,18 @@
-/* 
- * \file gs_slist_delete_first.c
- * \author Danny Willems
- *
- * \fn t_slist	*gs_slist_delete_first(	t_slist *list, void *data, int cmp())
- * \brief Delete first occurence of data and return it.
- *
- * Delete first occurence 'data' and return the element at the head of the list
- * after deleting the node containing 'data'.
- * See gs_slist_delete to delete all occurences data.
- * !!! Don't free the 'data' attribute !!!
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   gs_slist_delete_first.c                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 14:12:59 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 14:16:00 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
-
-t_slist	*gs_slist_delete_first(	t_slist *list, void *data,
+t_slist	*gs_slist_delete_first(t_slist *list, void *data,
 								int cmp(void *, void *))
 {
 	t_slist *tmp;

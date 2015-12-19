@@ -1,12 +1,14 @@
-/**
- * \file ft_strnchr.c
- * \author Danny Willems
- *
- * \fn char *ft_strnchr(const char *s, int c, size_t n)
- * \brief Same as strnchr in the standard library
- *
- * strnchr implementation. Return NULL if one of the arguments is NULL.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strnchr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 14:01:27 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 14:01:39 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 

@@ -1,12 +1,14 @@
-/**
- * \file ft_memccpy.c
- * \author Danny Willems
- *
- * \fn void *ft_memccpy(void *dest, const void *src, int c, size_t n)
- * \brief Same as memccpy in the standard library
- *
- * memccpy implementation.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memccpy.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 12:12:59 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 12:17:18 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
@@ -18,9 +20,9 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 
 	ISNULL(dest);
 	ISNULL(src);
-	c_dest	= (unsigned char *)dest;
-	c_src	= (unsigned char *)src;
-	i		= 0;
+	c_dest = (unsigned char *)dest;
+	c_src = (unsigned char *)src;
+	i = 0;
 	while (i < n)
 	{
 		if (*c_src == (unsigned char)c)

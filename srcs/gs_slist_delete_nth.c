@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   gs_slist_delete_nth.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 14:13:00 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 14:16:42 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 #include "gs_slist.h"
 
@@ -12,7 +24,7 @@ t_slist	*gs_slist_delete_nth(t_slist **list, pos_t i)
 	ret = *list;
 	if (i == 0)
 		return (gs_slist_pop(list));
-	while(i > 0 && *list)
+	while (i > 0 && *list)
 	{
 		previous = *list;
 		*list = (*list)->next;

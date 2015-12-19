@@ -1,12 +1,14 @@
-/**
- * \file ft_strlcat.c
- * \author Danny Willems
- *
- * \fn char *ft_strlcat(char *dest, const char *src, size_t size)
- * \brief Same as strlcat in the standard library
- *
- * strlcat implementation.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 13:43:45 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 13:43:45 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 

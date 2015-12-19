@@ -1,12 +1,14 @@
-/**
- * \file ft_strsplit_str.c
- * \author Danny Willems
- *
- * \fn char **ft_strsplit_str(const char *str, const char *sep)
- * \brief Split str into an array of char. The split str is sep.
- *
- * Split str into an array of char. The split str is sep.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strsplit_str.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 14:03:46 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 14:04:09 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
@@ -26,9 +28,9 @@ char	**ft_strsplit_str(const char *str, const char *sep)
 	while (i < len_str)
 	{
 		len = 0;
-		while (	i < len_str && ft_strnequ(str + i, sep, len_sep))
+		while (i < len_str && ft_strnequ(str + i, sep, len_sep))
 			i += len_sep;
-		while (	i + len < len_str 
+		while (i + len < len_str
 				&& ft_strnequ(str + i + len, sep, len_sep) == 0)
 			len++;
 		if (len > 0)

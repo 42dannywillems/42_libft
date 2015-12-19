@@ -1,12 +1,14 @@
-/**
- * \file ft_memmove.c
- * \author Danny Willems
- *
- * \fn void *ft_memmove(void *s1, const void *s2, size_t n)
- * \brief Same as memmove in the standard library
- *
- * memmove implementation.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 12:23:51 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 12:23:59 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 

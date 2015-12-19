@@ -1,12 +1,14 @@
-/**
- * \file ft_strnew.c
- * \author Danny Willems
- *
- * \fn char *ft_strnew(size_t size)
- * \brief Create a new string of size size
- *
- * Create a new_string with size size.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 13:59:21 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 13:59:21 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 

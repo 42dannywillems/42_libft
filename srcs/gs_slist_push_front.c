@@ -1,14 +1,14 @@
-/**
- * \file gs_slist_push_front.c
- * \author Danny Willems
- *
- * \fn t_slist *gs_slist_push_front(t_slist *list, void *data)
- * \brief Insert data at the beginning of the list
- *
- * Create a new element containing data. List is assigned to the new element
- * created.
- * If list->data is NULL, it is set to data.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   gs_slist_push_front.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 14:13:03 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 14:14:15 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "gs_slist.h"
 

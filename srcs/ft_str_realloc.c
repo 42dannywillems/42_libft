@@ -1,13 +1,14 @@
-/**
- * \file ft_str_realloc.c
- * \author Danny Willems
- *
- * \fn char *ft_str_realloc(char *ptr, size_t new_size)
- * \brief Realloc a string.
- *
- * Create a new string with size new_size, copy ptr data into it, and free ptr.
- * It returns the pointer to the first element of the new string.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_str_realloc.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 12:43:35 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 12:44:55 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 

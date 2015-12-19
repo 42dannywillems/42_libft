@@ -6,13 +6,13 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/29 17:09:30 by dwillems          #+#    #+#             */
-/*   Updated: 2015/11/29 17:12:48 by dwillems         ###   ########.fr       */
+/*   Updated: 2015/12/19 12:04:29 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-bool_t ft_isblankspace(int c)
+bool_t	ft_isblankspace(int c)
 {
 	return (c == ' ' || c == '\t' || c == '\n');
 }

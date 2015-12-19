@@ -1,15 +1,14 @@
-/**
- * \file gs_sslist_insert.c
- * \author Danny Willems
- *
- * \fn t_sslist *gs_sslist_insert(	t_sslist *list, void *data,
-									int cmp(void *, void *))
- * \brief Insert data in the sorted linked list, keeping the list sorted.
- *
- * If the list is empty, it creates a new list or modify the 'data' attribute.
- * If data is in the list, it doesn't insert it !
- * Return the first element of the list.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   gs_sslist_insert.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 12:54:48 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 14:22:22 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 #include "gs_sslist.h"
@@ -23,7 +22,7 @@ static t_sslist		*gs_sslist_insert_empty(t_sslist *list, void *data)
 	return (list);
 }
 
-static t_sslist		*gs_sslist_insert_in(	t_sslist *list, void *data,
+static t_sslist		*gs_sslist_insert_in(t_sslist *list, void *data,
 											int cmp(void *, void *))
 {
 	t_sslist	*previous;
@@ -51,10 +50,10 @@ static t_sslist		*gs_sslist_insert_in(	t_sslist *list, void *data,
 	previous->next = gs_sslist_create(data, list);
 	return (ret);
 }
-t_sslist	*gs_sslist_insert(	t_sslist *list, void *data,
+
+t_sslist			*gs_sslist_insert(t_sslist *list, void *data,
 								int cmp(void *, void *))
 {
-
 	if (gs_sslist_isempty(list))
 		return (gs_sslist_insert_empty(list, data));
 	else if (cmp(list->data, data) > 0)

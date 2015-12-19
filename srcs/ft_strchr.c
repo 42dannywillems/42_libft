@@ -1,12 +1,14 @@
-/**
- * \file ft_strchr.c
- * \author Danny Willems
- *
- * \fn char *ft_strchr(const char *s, int c)
- * \brief Same as strchr in the standard library
- *
- * strchr implementation.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 12:44:14 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 12:48:44 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
@@ -15,7 +17,7 @@ char	*ft_strchr(const char *s, int c)
 	ISNULL(s);
 	while (*s && *s != (unsigned char)c)
 		s++;
-	if (c == 0) // null bytes of s is considered
+	if (c == 0)
 		return ((char *)s);
-	return (*s ? (char *)s : NULL); // *s == 0 if not found --> NULL
+	return (*s ? (char *)s : NULL);
 }

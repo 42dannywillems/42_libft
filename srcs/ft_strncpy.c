@@ -1,12 +1,14 @@
-/**
- * \file ft_strncpy.c
- * \author Danny Willems
- *
- * \fn char *ft_strncpy(char *dest, const char *src, size_t n)
- * \brief Same as strncpy in the standard library
- *
- * strncpy implementation. Return NULL if one of the arguments is NULL.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 13:57:42 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 13:57:55 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 

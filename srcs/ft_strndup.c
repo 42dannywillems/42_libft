@@ -1,12 +1,14 @@
-/**
- * \file ft_strndup.c
- * \author Danny Willems
- *
- * \fn char *ft_strndup(const char *src, size_t n)
- * \brief Same as strndup in the standard library
- *
- * strndup implementation. Return NULL if one of the arguments is NULL.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strndup.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 13:58:21 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 13:58:21 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 

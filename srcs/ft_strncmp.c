@@ -1,12 +1,14 @@
-/**
- * \file ft_strncmp.c
- * \author Danny Willems
- *
- * \fn int ft_strncmp(const char *s1, const char *s2, size_t n)
- * \brief Same as strncmp in the standard library
- *
- * strncmp implementation. Return NULL if one of the arguments is NULL.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 13:57:21 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 13:57:21 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
@@ -17,7 +19,7 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n)
 	ISNULL_ZERO(s1);
 	ISNULL_ZERO(s2);
 	i = 1;
-	if (*s2 == '\0') // Empty case
+	if (*s2 == '\0')
 		return (1);
 	else if (n == 0)
 		return (0);

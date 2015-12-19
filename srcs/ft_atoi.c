@@ -1,12 +1,14 @@
-/**
- * \file ft_atoi.c
- * \author Danny Willems
- *
- * \fn int ft_atoi(const char *str)
- * \brief Same as atoi in the standard library
- *
- * atoi implementation.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 11:44:59 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 11:45:31 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 

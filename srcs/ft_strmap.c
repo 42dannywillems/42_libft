@@ -1,21 +1,21 @@
-/**
- * \file ft_strmap.c
- * \author Danny Willems
- *
- * \fn char *ft_strmap(char *s, char (*f)(char *))
- * \brief Apply f to each element of s, and replace it with the result.
- *
- * Replace each element of s with the return of the application f on this
- * element. 
- * Modify the string s.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strmap.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 13:44:49 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 13:44:49 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
 char	*ft_strmap(char const *s, char (*f)(char))
 {
-	char *n_s;
-	count_t i;
+	char	*n_s;
+	count_t	i;
 
 	ISNULL(s);
 	n_s = ft_strnew(ft_strlen(s));

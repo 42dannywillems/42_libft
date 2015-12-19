@@ -1,12 +1,14 @@
-/**
- * \file ft_memchr.c
- * \author Danny Willems
- *
- * \fn void *ft_memchr(const void *s, int c, size_t n)
- * \brief Same as memchr in the standard library
- *
- * memchr implementation.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 12:18:18 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 12:18:21 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 

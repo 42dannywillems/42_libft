@@ -1,12 +1,14 @@
-/**
- * \file ft_strdel.c
- * \author Danny Willems
- *
- * \fn void ft_strdel(char **as)
- * \brief Free the entire string and set the pointer to NULL.
- *
- * Free the entire string and set the pointer to NULL.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdel.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 12:51:22 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 12:51:46 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 

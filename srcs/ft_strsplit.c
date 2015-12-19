@@ -1,12 +1,14 @@
-/**
- * \file ft_strsplit.c
- * \author Danny Willems
- *
- * \fn char **ft_strsplit(const char *str, char c)
- * \brief Split str into an array of char. The split character is c.
- *
- * Split str into an array of char. The split character is c.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strsplit.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 14:03:09 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 14:03:18 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 

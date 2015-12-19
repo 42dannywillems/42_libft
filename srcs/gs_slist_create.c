@@ -1,13 +1,14 @@
-/**
- * \file gs_slist_create.c
- * \author Danny Willems
- *
- * \fn t_slist *gs_slist_create(void *data, t_slist *next)
- * \brief Create a new list.
- *
- * Create a new node with data and next element, and return this new node.
- * Return NULL if there's an error to allocate the t_slist structures.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   gs_slist_create.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 14:12:59 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 14:13:28 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "gs_slist.h"
 

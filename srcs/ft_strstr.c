@@ -1,12 +1,14 @@
-/**
- * \file ft_strstr.c
- * \author Danny Willems
- *
- * \fn char *ft_strstr(const char *haystack, const char *needle)
- * \brief Same as strstr in the standard library
- *
- * strstr implementation.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 14:04:55 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 14:04:55 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
@@ -20,13 +22,12 @@ char	*ft_strstr(const char *haystack, const char *needle)
 	ret = (char *)haystack;
 	if (*needle == '\0')
 		return (ret);
-
 	len_needle = ft_strlen(needle);
 	while (*ret)
 	{
 		ret = ft_strchr(ret, needle[0]);
 		if (ret)
-		{	
+		{
 			if (ft_strnequ(ret, needle, len_needle))
 				return (ret);
 			ret++;

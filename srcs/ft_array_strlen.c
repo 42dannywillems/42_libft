@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_array_strlen.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dwillems <dwillems@42.fr>                    +#+  +:+       +#+        */
+/*   By: dwillems <dwillems@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/29 16:58:58 by dwillems          #+#    #+#             */
-/*   Updated: 2015/11/29 17:01:19 by dwillems         ###   ########.fr       */
+/*   Updated: 2015/12/19 11:43:37 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_array_strlen(const char **s)
 {
-	count_t i;
+	count_t	i;
 	size_t	size;
 
 	i = 0;

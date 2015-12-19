@@ -1,12 +1,14 @@
-/**
- * \file ft_strclr.c
- * \author Danny Willems
- *
- * \fn void ft_strclr(char *s)
- * \brief Assign the zero character to the entire string
- *
- * Assign the zero character to the entire string
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strclr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 12:49:23 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 12:49:35 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 

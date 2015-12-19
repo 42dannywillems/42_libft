@@ -1,12 +1,14 @@
-/**
- * \file ft_strncat.c
- * \author Danny Willems
- *
- * \fn char *ft_strncat(char *dest, const char *src)
- * \brief Same as strncat in the standard library
- *
- * strncat implementation. Return NULL if one of the arguments is NULL.
- */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/19 13:56:06 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/19 13:56:06 by dwillems         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
