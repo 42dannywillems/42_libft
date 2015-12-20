@@ -9,9 +9,6 @@
 #include "gs_slist.h"
 #include "gs_sslist.h"
 #include "gs_stack.h"
-#include "gs_bstree.h"
-#include "gs_avltree.h"
-#include "ft_get_next_line.h"
 
 # define ISNULL(x)			if (((x)) == NULL) return (NULL)
 # define ISNULL_ZERO(x)		if (((x)) == NULL) return (0)
