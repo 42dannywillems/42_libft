@@ -1,14 +1,35 @@
 #ifndef GS_STACK_H
 # define GS_STACK_H
 
-# define t_stack				t_slist
-# define gs_stack_create(x, y)	gs_slist_create(x, y)
-# define gs_stack_clear(x)		gs_slist_clear(x)
+typedef struct 		s_stack
+{
+	void			*data;
+	struct s_stack	*next;
+}					t_stack;
 
-# define gs_stack_size(x)		gs_slist_size(x)
-# define gs_stack_pop(x)		gs_slist_pop(x)
-# define gs_stack_push(x, y)	gs_slist_push_front(x, y)
-# define gs_stack_merge(x, y)	gs_slist_merge(x, y)
+}
 
-# define gs_stack_print(x)		gs_slist_print(x)
+/*
+** Creation, insert and merge
+*/
+t_stack				*gs_stack_create(void *data, t_stack *next);
+t_stack				*gs_stack_merge(t_stack *list1, t_stack *list2,
+								int cmp(void *, void *));
+
+/*
+** Remove functions
+*/
+t_stack				*gs_stack_pop(t_stack **list);
+void				gs_stack_clear(t_stack **list);
+
+/*
+** size related functions
+*/
+size_t				gs_stack_size(const t_stack *list);
+bool_t				gs_stack_isempty(const t_stack *list);
+
+/*
+** Print functions
+*/
+void				gs_stack_print(t_stack *list);
 #endif
