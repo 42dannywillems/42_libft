@@ -13,7 +13,7 @@
 #ifndef GS_STACK_H
 # define GS_STACK_H
 
-typedef struct 		s_stack
+typedef struct		s_stack
 {
 	void			*data;
 	struct s_stack	*next;
@@ -42,4 +42,5 @@ bool_t				gs_stack_isempty(const t_stack *list);
 ** Print functions
 */
 void				gs_stack_print(t_stack *list);
+
 #endif
