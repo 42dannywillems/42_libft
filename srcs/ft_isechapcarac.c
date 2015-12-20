@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-bool_t		ft_isechapcarac(int c)
+t_bool		ft_isechapcarac(int c)
 {
 	return (c == ' ' ||
 			c == '\t' ||

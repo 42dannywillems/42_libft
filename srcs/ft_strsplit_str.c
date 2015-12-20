@@ -14,7 +14,7 @@
 
 char	**ft_strsplit_str(const char *str, const char *sep)
 {
-	count_t		i;
+	t_count		i;
 	size_t		len;
 	size_t		len_sep;
 	size_t		len_str;

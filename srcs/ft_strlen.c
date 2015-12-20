@@ -14,7 +14,7 @@
 
 size_t		ft_strlen(const char *str)
 {
-	count_t i;
+	t_count i;
 
 	ISNULL_ZERO(str);
 	i = 0;

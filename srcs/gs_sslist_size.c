@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   gs_sslit_size.c                                    :+:      :+:    :+:   */
+/*   gs_sslist_size.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,12 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "gs_sslit.h"
+#include "gs_sslist.h"
 
-size_t	gs_sslit_size(const t_sslit *list)
+size_t	gs_sslist_size(const t_sslist *list)
 {
-	if (gs_sslit_isempty(list))
+	if (gs_sslist_isempty(list))
 		return (0);
 	else
-		return (1 + gs_sslit_size(list->next));
+		return (1 + gs_sslist_size(list->next));
 }

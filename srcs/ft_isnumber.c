@@ -12,9 +12,9 @@
 
 #include "libft.h"
 
-bool_t	ft_isnumber(const char *s)
+t_bool	ft_isnumber(const char *s)
 {
-	count_t i;
+	t_count i;
 
 	ISNULL_ZERO(s);
 	i = 0;

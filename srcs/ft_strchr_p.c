@@ -14,7 +14,7 @@
 
 int		ft_strchr_p(const char *str, int c)
 {
-	count_t i;
+	t_count i;
 
 	ISNULL_ZERO(str);
 	i = 0;

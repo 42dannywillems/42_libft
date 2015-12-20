@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-char	**gs_slist_toarray(t_slist *list, bool_t delete_list)
+char	**gs_slist_toarray(t_slist *list, t_bool delete_list)
 {
 	char		**array_str;
 	size_t		list_size;

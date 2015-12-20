@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   gs_sslit_find.c                                    :+:      :+:    :+:   */
+/*   gs_sslist_find.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,15 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "gs_sslit.h"
+#include "gs_sslist.h"
 
-t_sslit	*gs_sslit_find(t_sslit *list, void *data_ref,
+t_sslist	*gs_sslist_find(t_sslist *list, void *data_ref,
 						int (*cmp)(void *, void *))
 {
-	if (!gs_sslit_isempty(list))
+	if (!gs_sslist_isempty(list))
 	{
 		if (cmp(data_ref, list->data))
-			return (gs_sslit_find(list->next, data_ref, cmp));
+			return (gs_sslist_find(list->next, data_ref, cmp));
 		else
 			return (list);
 	}

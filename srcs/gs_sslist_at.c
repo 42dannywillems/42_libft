@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   gs_sslit_at.c                                      :+:      :+:    :+:   */
+/*   gs_sslist_at.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,15 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "gs_sslit.h"
+#include "gs_sslist.h"
 
-t_sslit	*gs_sslit_at(t_sslit *list, pos_t i)
+t_sslist	*gs_sslist_at(t_sslist *list, t_pos i)
 {
-	if (!gs_sslit_isempty(list))
+	if (!gs_sslist_isempty(list))
 		if (i == 0)
 			return (list);
 		else
-			return (gs_sslit_at(list->next, i - 1));
+			return (gs_sslist_at(list->next, i - 1));
 	else
 		return (NULL);
 }

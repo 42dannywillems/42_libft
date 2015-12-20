@@ -36,7 +36,7 @@ t_sslist			*gs_sslist_merge(t_sslist *list1, t_sslist *list2,
 */
 t_sslist			*gs_sslist_pop(t_sslist **list);
 void				gs_sslist_clear(t_sslist **list);
-t_sslist			*gs_sslist_delete_nth(t_sslist **list, pos_t i);
+t_sslist			*gs_sslist_delete_nth(t_sslist **list, t_pos i);
 t_sslist			*gs_sslist_delete(t_sslist *list, void *data,
 								int cmp(void *, void *));
 
@@ -44,12 +44,12 @@ t_sslist			*gs_sslist_delete(t_sslist *list, void *data,
 ** size related functions
 */
 size_t				gs_sslist_size(const t_sslist *list);
-bool_t				gs_sslist_isempty(const t_sslist *list);
+t_bool				gs_sslist_isempty(const t_sslist *list);
 
 /*
 ** Search related function
 */
-t_sslist			*gs_sslist_at(t_sslist *list, pos_t i);
+t_sslist			*gs_sslist_at(t_sslist *list, t_pos i);
 t_sslist			*gs_sslist_find(t_sslist *list, void *data_ref,
 						int (*cmp)(void *, void *));
 
@@ -60,7 +60,7 @@ void				gs_sslist_print(t_sslist *list);
 
 /*
 ** To_check
-** char	**gs_sslist_toarray(t_sslist *list, bool_t delete_list);
+** char	**gs_sslist_toarray(t_sslist *list, t_bool delete_list);
 */
 
 #endif

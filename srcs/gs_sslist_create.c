@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   gs_sslit_create.c                                  :+:      :+:    :+:   */
+/*   gs_sslist_create.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,13 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "gs_sslit.h"
+#include "gs_sslist.h"
 
-t_sslit		*gs_sslit_create(void *data, t_sslit *next)
+t_sslist		*gs_sslist_create(void *data, t_sslist *next)
 {
-	t_sslit	*list;
+	t_sslist	*list;
 
-	list = (t_sslit *)malloc(sizeof(t_sslit));
+	list = (t_sslist *)malloc(sizeof(t_sslist));
 	if (list)
 	{
 		list->data = data;

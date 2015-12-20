@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-bool_t		ft_strequ(char const *s1, char const *s2)
+t_bool		ft_strequ(char const *s1, char const *s2)
 {
 	ISNULL_ZERO(s1);
 	ISNULL_ZERO(s2);

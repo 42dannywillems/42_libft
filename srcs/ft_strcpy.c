@@ -14,7 +14,7 @@
 
 char	*ft_strcpy(char *dest, const char *src)
 {
-	count_t i;
+	t_count i;
 
 	ISNULL(dest);
 	ISNULL(src);

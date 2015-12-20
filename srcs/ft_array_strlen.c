@@ -14,7 +14,7 @@
 
 size_t	ft_array_strlen(const char **s)
 {
-	count_t	i;
+	t_count	i;
 	size_t	size;
 
 	i = 0;

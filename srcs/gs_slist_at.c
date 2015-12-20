@@ -12,7 +12,7 @@
 
 #include "gs_slist.h"
 
-t_slist	*gs_slist_at(t_slist *list, pos_t i)
+t_slist	*gs_slist_at(t_slist *list, t_pos i)
 {
 	if (!gs_slist_isempty(list))
 		if (i == 0)

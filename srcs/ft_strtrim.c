@@ -14,10 +14,10 @@
 
 char	*ft_strtrim(char const *s)
 {
-	count_t	i;
-	count_t	beg;
-	count_t end;
-	bool_t	read;
+	t_count	i;
+	t_count	beg;
+	t_count end;
+	t_bool	read;
 
 	ISNULL(s);
 	i = 0;

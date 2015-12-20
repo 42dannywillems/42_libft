@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   gs_sslit_clear.c                                   :+:      :+:    :+:   */
+/*   gs_sslist_clear.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,11 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "gs_sslit.h"
+#include "gs_sslist.h"
 
-void	gs_sslit_clear(t_sslit **list)
+void	gs_sslist_clear(t_sslist **list)
 {
-	t_sslit *tmp;
+	t_sslist *tmp;
 
 	while (*list)
 	{

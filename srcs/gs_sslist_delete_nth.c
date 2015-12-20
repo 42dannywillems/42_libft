@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   gs_sslit_delete_nth.c                              :+:      :+:    :+:   */
+/*   gs_sslist_delete_nth.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -11,19 +11,19 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "gs_sslit.h"
+#include "gs_sslist.h"
 
-t_sslit	*gs_sslit_delete_nth(t_sslit **list, pos_t i)
+t_sslist	*gs_sslist_delete_nth(t_sslist **list, t_pos i)
 {
-	t_sslit *ret;
-	t_sslit *previous;
-	t_sslit *data;
+	t_sslist *ret;
+	t_sslist *previous;
+	t_sslist *data;
 
 	previous = NULL;
 	data = NULL;
 	ret = *list;
 	if (i == 0)
-		return (gs_sslit_pop(list));
+		return (gs_sslist_pop(list));
 	while (i > 0 && *list)
 	{
 		previous = *list;

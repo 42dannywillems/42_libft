@@ -14,7 +14,7 @@
 
 char	*ft_array_join(const char **s, const char *join)
 {
-	count_t	i;
+	t_count	i;
 	size_t	len_array;
 	size_t	len_join;
 	size_t	len_str;

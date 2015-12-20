@@ -14,7 +14,7 @@
 
 void	ft_strclr(char *s)
 {
-	count_t i;
+	t_count i;
 
 	if (s)
 	{

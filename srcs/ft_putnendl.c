@@ -14,7 +14,7 @@
 
 void	ft_putnendl(char const *c, size_t n)
 {
-	count_t i;
+	t_count i;
 
 	i = 0;
 	if (c)

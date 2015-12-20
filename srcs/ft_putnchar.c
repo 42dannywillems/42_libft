@@ -14,7 +14,7 @@
 
 void	ft_putnchar(char c, size_t n)
 {
-	count_t i;
+	t_count i;
 
 	i = 0;
 	while (i++ < n)

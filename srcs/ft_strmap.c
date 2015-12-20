@@ -15,7 +15,7 @@
 char	*ft_strmap(char const *s, char (*f)(char))
 {
 	char	*n_s;
-	count_t	i;
+	t_count	i;
 
 	ISNULL(s);
 	n_s = ft_strnew(ft_strlen(s));

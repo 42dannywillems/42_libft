@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   gs_sslit_print.c                                   :+:      :+:    :+:   */
+/*   gs_sslist_print.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,16 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "gs_sslit.h"
+#include "gs_sslist.h"
 #include "libft.h"
 
-void	gs_sslit_print(t_sslit *list)
+void	gs_sslist_print(t_sslist *list)
 {
-	if (!gs_sslit_isempty(list))
+	if (!gs_sslist_isempty(list))
 	{
 		ft_putstr((const char *)list->data);
 		ft_putstr(" -> ");
-		gs_sslit_print(list->next);
+		gs_sslist_print(list->next);
 	}
 	else
 		ft_putendl("*");

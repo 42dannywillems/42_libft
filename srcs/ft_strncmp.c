@@ -14,7 +14,7 @@
 
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	count_t i;
+	t_count i;
 
 	ISNULL_ZERO(s1);
 	ISNULL_ZERO(s2);

@@ -15,7 +15,7 @@
 int		ft_atoi(const char *str)
 {
 	int		nbre;
-	count_t	i;
+	t_count	i;
 	int		signe;
 
 	i = 0;

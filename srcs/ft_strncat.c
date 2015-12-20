@@ -14,8 +14,8 @@
 
 char	*ft_strncat(char *dest, const char *src, size_t nb)
 {
-	count_t i;
-	count_t j;
+	t_count i;
+	t_count j;
 
 	ISNULL(dest);
 	ISNULL(src);

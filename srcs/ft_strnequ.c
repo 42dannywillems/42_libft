@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-bool_t		ft_strnequ(char const *s1, char const *s2, size_t n)
+t_bool		ft_strnequ(char const *s1, char const *s2, size_t n)
 {
 	ISNULL_ZERO(s1);
 	ISNULL_ZERO(s2);

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   gs_sslit_delete.c                                  :+:      :+:    :+:   */
+/*   gs_sslist_delete.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,22 +12,22 @@
 
 #include "libft.h"
 
-t_sslit	*gs_sslit_delete(t_sslit *list, void *data, int cmp(void *, void *))
+t_sslist	*gs_sslist_delete(t_sslist *list, void *data, int cmp(void *, void *))
 {
-	t_sslit *tmp;
+	t_sslist *tmp;
 
-	if (gs_sslit_isempty(list))
+	if (gs_sslist_isempty(list))
 		return (NULL);
 	else if (cmp(list->data, data) == 0)
 	{
 		tmp = list->next;
 		free(list);
-		tmp = gs_sslit_delete(tmp, data, cmp);
+		tmp = gs_sslist_delete(tmp, data, cmp);
 		return (tmp);
 	}
 	else
 	{
-		list->next = gs_sslit_delete(list->next, data, cmp);
+		list->next = gs_sslist_delete(list->next, data, cmp);
 		return (list);
 	}
 }

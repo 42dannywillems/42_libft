@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   gs_sslit_pop.c                                     :+:      :+:    :+:   */
+/*   gs_sslist_pop.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -11,13 +11,13 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "gs_sslit.h"
+#include "gs_sslist.h"
 
-t_sslit	*gs_sslit_pop(t_sslit **list)
+t_sslist	*gs_sslist_pop(t_sslist **list)
 {
-	t_sslit *ret;
+	t_sslist *ret;
 
-	if (gs_sslit_isempty(*list))
+	if (gs_sslist_isempty(*list))
 		return (NULL);
 	ret = *list;
 	*list = (*list)->next;

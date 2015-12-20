@@ -13,7 +13,7 @@
 #include "libft.h"
 #include "gs_slist.h"
 
-t_slist	*gs_slist_delete_nth(t_slist **list, pos_t i)
+t_slist	*gs_slist_delete_nth(t_slist **list, t_pos i)
 {
 	t_slist *ret;
 	t_slist *previous;

@@ -14,7 +14,7 @@
 
 void	ft_putnstr(char const *c, size_t n)
 {
-	count_t i;
+	t_count i;
 
 	if (c)
 	{

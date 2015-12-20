@@ -15,7 +15,7 @@
 char	*ft_strrchr(const char *s, int c)
 {
 	char	*ret;
-	count_t	i;
+	t_count	i;
 
 	ISNULL(s);
 	ret = NULL;

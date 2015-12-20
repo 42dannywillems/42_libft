@@ -12,7 +12,7 @@
 
 #include "gs_stack.h"
 
-bool_t	gs_stack_isempty(const t_stack *list)
+t_bool	gs_stack_isempty(const t_stack *list)
 {
 	return (list == NULL || list->data == NULL);
 }

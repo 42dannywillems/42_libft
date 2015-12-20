@@ -14,7 +14,7 @@
 
 size_t		ft_array_len(const char **s)
 {
-	count_t i;
+	t_count i;
 
 	i = 0;
 	while (ft_strequ(s[i], "\0") == FALSE)
