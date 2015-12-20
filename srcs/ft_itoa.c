@@ -6,7 +6,7 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/19 12:08:52 by dwillems          #+#    #+#             */
-/*   Updated: 2015/12/20 13:24:27 by dwillems         ###   ########.fr       */
+/*   Updated: 2015/12/20 13:27:29 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static void	ft_itoa_loc(char *s, int n, t_count i)
 		ft_itoa_loc(s, n / 10, i - 1);
 }
 
-char	*ft_itoa(int n)
+char		*ft_itoa(int n)
 {
 	char	*str;
 	size_t	len_str;

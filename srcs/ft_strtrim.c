@@ -6,7 +6,7 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/19 14:06:53 by dwillems          #+#    #+#             */
-/*   Updated: 2015/12/19 14:08:40 by dwillems         ###   ########.fr       */
+/*   Updated: 2015/12/20 13:34:51 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ char	*ft_strtrim(char const *s)
 
 	ISNULL(s);
 	i = 0;
-	read = FALSE;
 	while (s[i] && ft_isblankspace(s[i]))
 		i++;
 	beg = i;
