@@ -6,13 +6,13 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/21 20:07:49 by dwillems          #+#    #+#             */
-/*   Updated: 2015/12/21 20:23:18 by dwillems         ###   ########.fr       */
+/*   Updated: 2015/12/21 20:26:35 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putstr_info(char const *s)
+void	ft_putstr_info(char const *s)
 {
 	ft_putstr(KCYN);
 	ft_putstr(s);

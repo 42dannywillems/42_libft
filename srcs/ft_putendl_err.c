@@ -6,7 +6,7 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/21 20:12:17 by dwillems          #+#    #+#             */
-/*   Updated: 2015/12/21 20:19:37 by dwillems         ###   ########.fr       */
+/*   Updated: 2015/12/21 20:25:54 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 #include "libft.h"
 
-void ft_putendl_err(char const *s)
+void	ft_putendl_err(char const *s)
 {
 	ft_putstr(KRED);
 	ft_putstr(s);

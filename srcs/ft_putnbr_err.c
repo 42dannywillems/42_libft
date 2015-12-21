@@ -6,13 +6,13 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/21 20:10:07 by dwillems          #+#    #+#             */
-/*   Updated: 2015/12/21 20:22:48 by dwillems         ###   ########.fr       */
+/*   Updated: 2015/12/21 20:26:02 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putnbr_err(int nb)
+void	ft_putnbr_err(int nb)
 {
 	ft_putstr(KRED);
 	ft_putnbr(nb);
