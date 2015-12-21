@@ -1,18 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putstr_succ.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/12/19 12:41:34 by dwillems          #+#    #+#             */
-/*   Updated: 2015/12/21 20:23:13 by dwillems         ###   ########.fr       */
+/*   Created: 2015/12/21 20:08:49 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/21 20:23:20 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char const *s, int fd)
+void ft_putstr_succ(char const *s)
 {
-	write(fd, s, ft_strlen(s));
+	ft_putstr(KGRN);
+	ft_putstr(s);
+	ft_putstr(KNRM);
 }
