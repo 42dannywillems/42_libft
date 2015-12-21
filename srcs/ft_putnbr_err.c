@@ -1,19 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbrendl_fd.c                                 :+:      :+:    :+:   */
+/*   ft_putnbr_err.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/12/19 12:40:14 by dwillems          #+#    #+#             */
-/*   Updated: 2015/12/21 20:22:09 by dwillems         ###   ########.fr       */
+/*   Created: 2015/12/21 20:10:07 by dwillems          #+#    #+#             */
+/*   Updated: 2015/12/21 20:22:48 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbrendl_fd(int nbr, int fd)
+void ft_putnbr_err(int nb)
 {
-	ft_putnbr_fd(nbr, fd);
-	ft_putendl_fd("", fd);
+	ft_putstr(KRED);
+	ft_putnbr(nb);
+	ft_putstr(KNRM);
 }
