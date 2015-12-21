@@ -6,9 +6,13 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/29 17:09:56 by dwillems          #+#    #+#             */
-/*   Updated: 2015/11/29 17:09:58 by dwillems         ###   ########.fr       */
+/*   Updated: 2015/12/21 22:42:33 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Returns true if the character [c] is a print character.
+*/
 
 #include "libft.h"
 
