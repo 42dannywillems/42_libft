@@ -6,7 +6,7 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/20 13:10:43 by dwillems          #+#    #+#             */
-/*   Updated: 2015/12/20 13:15:30 by dwillems         ###   ########.fr       */
+/*   Updated: 2015/12/21 20:01:59 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 # include "gs_slist.h"
 # include "gs_sslist.h"
 # include "gs_stack.h"
+# include "gs_color.h"
 
 # define ISNULL(x)			if (((x)) == NULL) return (NULL)
 # define ISNULL_ZERO(x)		if (((x)) == NULL) return (0)
@@ -160,18 +161,42 @@ t_bool			ft_isprint(int c);
 ** ***** Print functions
 */
 void			ft_putchar(char c);
+void			ft_putchar_err(char c);
+void			ft_putchar_info(char c);
+void			ft_putchar_succ(char c);
 void			ft_putstr(char const *s);
+void			ft_putstr_err(char const *s);
+void			ft_putstr_info(char const *s);
+void			ft_putstr_succ(char const *s);
 void			ft_putendl(char const *s);
+void			ft_putendl_err(char const *s);
+void			ft_putendl_info(char const *s);
+void			ft_putendl_succ(char const *s);
 void			ft_putnbr(int n);
+void			ft_putnbr_err(int n);
+void			ft_putnbr_info(int n);
+void			ft_putnbr_succ(int n);
 void			ft_putchar_fd(char c, int fd);
 void			ft_putstr_fd(char const *s, int fd);
 void			ft_putendl_fd(char const *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
 void			ft_putnbrendl(int n);
+void			ft_putnbrendl_err(int n);
+void			ft_putnbrendl_info(int n);
+void			ft_putnbrendl_succ(int n);
 void			ft_putnbrendl_fd(int n, int fd);
 void			ft_putnendl(const char *c, size_t n);
+void			ft_putnendl_err(const char *c, size_t n);
+void			ft_putnendl_info(const char *c, size_t n);
+void			ft_putnendl_succ(const char *c, size_t n);
 void			ft_putnchar(char c, size_t n);
+void			ft_putnchar_err(char c, size_t n);
+void			ft_putnchar_info(char c, size_t n);
+void			ft_putnchar_succ(char c, size_t n);
 void			ft_putnstr(const char *c, size_t n);
+void			ft_putnstr_err(const char *c, size_t n);
+void			ft_putnstr_info(const char *c, size_t n);
+void			ft_putnstr_succ(const char *c, size_t n);
 
 /*
 ** ***** Transformation
