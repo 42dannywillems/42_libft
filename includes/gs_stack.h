@@ -6,7 +6,7 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/20 12:58:02 by dwillems          #+#    #+#             */
-/*   Updated: 2015/12/20 13:26:14 by dwillems         ###   ########.fr       */
+/*   Updated: 2015/12/21 18:12:12 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ typedef struct		s_stack
 ** Creation, insert and merge
 */
 t_stack				*gs_stack_create(void *data, t_stack *next);
+t_stack				*gs_stack_push(t_stack *list, void *data);
 t_stack				*gs_stack_merge(t_stack *list1, t_stack *list2);
 
 /*
