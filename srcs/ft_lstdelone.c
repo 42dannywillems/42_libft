@@ -6,9 +6,15 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/19 12:09:57 by dwillems          #+#    #+#             */
-/*   Updated: 2015/12/19 12:10:01 by dwillems         ###   ########.fr       */
+/*   Updated: 2015/12/21 22:46:30 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** alst is a pointer to a node and *del is a function which frees the node
+** data.
+** ft_lstdelone frees the node pointed by alast. *alst is set to null.
+*/
 
 #include "libft.h"
 

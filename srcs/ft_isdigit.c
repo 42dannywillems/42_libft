@@ -6,9 +6,13 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/29 17:09:35 by dwillems          #+#    #+#             */
-/*   Updated: 2015/11/29 17:09:38 by dwillems         ###   ########.fr       */
+/*   Updated: 2015/12/21 22:41:09 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Return true if the character [c] is a digit.
+*/
 
 #include "libft.h"
 
