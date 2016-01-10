@@ -6,12 +6,11 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/19 12:54:48 by dwillems          #+#    #+#             */
-/*   Updated: 2015/12/20 13:30:00 by dwillems         ###   ########.fr       */
+/*   Updated: 2015/12/21 16:03:57 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "gs_sslist.h"
 
 static t_sslist		*gs_sslist_insert_empty(t_sslist *list, void *data)
 {

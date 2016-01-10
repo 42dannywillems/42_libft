@@ -6,11 +6,11 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/19 14:13:02 by dwillems          #+#    #+#             */
-/*   Updated: 2015/12/19 14:14:04 by dwillems         ###   ########.fr       */
+/*   Updated: 2015/12/21 16:04:11 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "gs_slist.h"
+#include "libft.h"
 
 t_slist	*gs_slist_merge(t_slist *list1, t_slist *list2)
 {

@@ -6,11 +6,11 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/19 14:17:25 by dwillems          #+#    #+#             */
-/*   Updated: 2015/12/19 14:17:25 by dwillems         ###   ########.fr       */
+/*   Updated: 2015/12/21 16:01:30 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "gs_slist.h"
+#include "libft.h"
 
 t_slist	*gs_slist_find_max(t_slist *list, int (*cmp)(void *, void *))
 {

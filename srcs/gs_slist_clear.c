@@ -6,11 +6,11 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/19 14:12:58 by dwillems          #+#    #+#             */
-/*   Updated: 2015/12/19 14:13:24 by dwillems         ###   ########.fr       */
+/*   Updated: 2015/12/21 16:00:24 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "gs_slist.h"
+#include "libft.h"
 
 void	gs_slist_clear(t_slist **list)
 {

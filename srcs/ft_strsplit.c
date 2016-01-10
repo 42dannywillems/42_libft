@@ -6,7 +6,7 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/19 14:03:09 by dwillems          #+#    #+#             */
-/*   Updated: 2015/12/21 23:19:22 by dwillems         ###   ########.fr       */
+/*   Updated: 2016/01/09 19:21:15 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ char	**ft_strsplit(const char *str, char c)
 {
 	char	*sep;
 
-	sep = ft_strnew(1);
+	if (!(sep = ft_strnew(1)))
+		return (NULL);
 	sep[0] = c;
 	sep[1] = '\0';
 	return (ft_strsplit_str(str, sep));

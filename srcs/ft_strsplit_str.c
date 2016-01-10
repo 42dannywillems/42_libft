@@ -6,7 +6,7 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/19 14:03:46 by dwillems          #+#    #+#             */
-/*   Updated: 2015/12/21 23:19:27 by dwillems         ###   ########.fr       */
+/*   Updated: 2016/01/07 11:04:22 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,5 @@ char	**ft_strsplit_str(const char *str, const char *sep)
 			list = gs_slist_push_front(list, ft_strsub(str, i, len));
 		i += len;
 	}
-	return (gs_slist_toarray(list, 0));
+	return (gs_slist_toarray(list, 1));
 }

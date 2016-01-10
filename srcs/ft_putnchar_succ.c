@@ -6,7 +6,7 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/21 20:34:41 by dwillems          #+#    #+#             */
-/*   Updated: 2015/12/21 20:35:07 by dwillems         ###   ########.fr       */
+/*   Updated: 2016/01/09 16:59:15 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 #include "libft.h"
 
-void	ft_putnchar_green(char c, size_t n)
+void	ft_putnchar_succ(char c, size_t n)
 {
 	t_count i;
 

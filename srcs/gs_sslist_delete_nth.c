@@ -6,12 +6,11 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/19 14:13:00 by dwillems          #+#    #+#             */
-/*   Updated: 2015/12/20 13:29:53 by dwillems         ###   ########.fr       */
+/*   Updated: 2015/12/21 16:01:38 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "gs_sslist.h"
 
 t_sslist	*gs_sslist_delete_nth(t_sslist **list, t_pos i)
 {

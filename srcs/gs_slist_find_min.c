@@ -6,11 +6,11 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/19 14:13:01 by dwillems          #+#    #+#             */
-/*   Updated: 2015/12/19 14:13:52 by dwillems         ###   ########.fr       */
+/*   Updated: 2015/12/21 16:00:12 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "gs_slist.h"
+#include "libft.h"
 
 t_slist	*gs_slist_find_min(t_slist *list, int (*cmp)(void *, void *))
 {

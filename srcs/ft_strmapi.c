@@ -6,7 +6,7 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/19 13:55:24 by dwillems          #+#    #+#             */
-/*   Updated: 2015/12/19 13:55:24 by dwillems         ###   ########.fr       */
+/*   Updated: 2016/01/09 19:09:51 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	t_count	i;
 
 	ISNULL(s);
-	n_s = ft_strnew(ft_strlen(s));
+	if (!(n_s = ft_strnew(ft_strlen(s))))
+		return (NULL);
 	i = 0;
 	while (s[i])
 	{

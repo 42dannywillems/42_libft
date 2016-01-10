@@ -6,11 +6,11 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/19 14:12:58 by dwillems          #+#    #+#             */
-/*   Updated: 2015/12/19 14:13:20 by dwillems         ###   ########.fr       */
+/*   Updated: 2015/12/21 15:58:37 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "gs_slist.h"
+#include "libft.h"
 
 t_slist	*gs_slist_at(t_slist *list, t_pos i)
 {

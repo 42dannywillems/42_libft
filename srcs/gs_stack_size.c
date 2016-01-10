@@ -6,11 +6,11 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/19 14:13:04 by dwillems          #+#    #+#             */
-/*   Updated: 2015/12/20 12:45:53 by dwillems         ###   ########.fr       */
+/*   Updated: 2015/12/21 15:59:28 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "gs_stack.h"
+#include "libft.h"
 
 size_t	gs_stack_size(const t_stack *list)
 {

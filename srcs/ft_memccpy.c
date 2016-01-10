@@ -6,7 +6,7 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/19 12:12:59 by dwillems          #+#    #+#             */
-/*   Updated: 2015/12/19 12:17:18 by dwillems         ###   ########.fr       */
+/*   Updated: 2016/01/09 17:47:08 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 	i = 0;
 	while (i < n)
 	{
+		*c_dest = *c_src;
 		if (*c_src == (unsigned char)c)
 			return (c_dest + 1);
-		*c_dest = *c_src;
 		c_dest++;
 		c_src++;
 		i++;

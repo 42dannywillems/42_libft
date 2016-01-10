@@ -6,11 +6,11 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/19 14:13:03 by dwillems          #+#    #+#             */
-/*   Updated: 2015/12/20 12:46:43 by dwillems         ###   ########.fr       */
+/*   Updated: 2015/12/21 16:02:23 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "gs_stack.h"
+#include "libft.h"
 
 t_stack	*gs_stack_push(t_stack *list, void *data)
 {

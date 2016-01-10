@@ -6,11 +6,11 @@
 /*   By: dwillems <dwillems@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/19 14:13:02 by dwillems          #+#    #+#             */
-/*   Updated: 2015/12/20 13:26:15 by dwillems         ###   ########.fr       */
+/*   Updated: 2015/12/21 16:00:46 by dwillems         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "gs_stack.h"
+#include "libft.h"
 
 t_stack	*gs_stack_merge(t_stack *list1, t_stack *list2)
 {
