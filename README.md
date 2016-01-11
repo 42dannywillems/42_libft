@@ -1,7 +1,5 @@
 #42 libft
 
-DOCUMENTATION MUST BE DONE.
-
 42_libft is a C library containing functions which stdlib implements. This is
 the first project in 42.
 
