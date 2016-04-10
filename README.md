@@ -1,10 +1,20 @@
 #42 libft
 
+Moulitest: [![Build Status](https://travis-ci.org/42dannywillems/42_libft.svg?branch=master)](https://travis-ci.org/42dannywillems/42_libft)
+
 42_libft is a C library containing functions which stdlib implements. This is
 the first project in 42.
 
 Unlike stdlib, 42_libft has data structures implementations such as stacks,
 single and double linked list, tree, etc.
+
+## How to use it ?
+
+You need to compile the library using:
+```
+make
+```
+A static library is created as libft.a.
 
 ###Version 1.2 (v1.2)
 * print in color: *put* functions with err print in red, succ in green and info
