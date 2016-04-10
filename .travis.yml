@@ -3,4 +3,5 @@ language: c
 script:
   - git clone https://github.com/yyang42/moulitest $HOME/moulitest
   - echo "LIBFT_PATH=$HOME/$TRAVIS_REPO_SLUG" >> $HOME/moulitest/config.ini
+  - cat $HOME/moulitest/config.ini
   - cd $HOME/moulitest && make libft_bonus
