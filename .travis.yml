@@ -1,0 +1,6 @@
+language: c
+
+script:
+  git clone https://github.com/yyang42/moulitest
+  echo "LIBFT_PATH=/home/travis/42_libft" >> "moulitest/config.ini"
+  cd moulitest && make libft_bonus
