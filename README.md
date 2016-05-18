@@ -80,4 +80,4 @@ A static library is created as libft.a.
 * Sort algorithms
 	* Heap sort
 	* Quick sort
-
+* Regex
